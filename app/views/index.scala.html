@@ -1,47 +1,48 @@
-@(message: String)
+@(message: String)(implicit l: Lang)
+
+  @header() = {
+    <div class="row">
+      <div class="span6">
+
+        <h1 class="logo">
+          @Messages("name")
+          <br /><small>@Messages("description")(l)</small>
+        </h1>
+
+      </div><!-- end .span6 -->
+      <div class="span3">
+
+        <address class="address-info hide-on-phone">
+          @message
+          <br />Some city, xx 54990
+          <br />Some Country
+        </address>
+
+      </div><!-- end .span3 -->
+      <div class="span3">
+
+        <ul class="contact-info hide-on-phone fixed">
+          <li>E-mail: <a href="mailto:#">@@site.com</a></li>
+          <li>Website: <a href="#">john-smith-cv.com</a></li>
+          <li>Phone: <strong>+1-234-567-8900</strong></li>
+        </ul>
+
+      </div><!-- end .span3 -->
+    </div><!-- end .row -->
+
+  }
 
 @main("Formal CV") {
-
-
 
   <div class="wrap">
     <div class="content">
 
         <!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-
-      <div class="row">
-        <div class="span6">
-
-          <h1 class="logo">
-            John Smith
-            <br /><small>Creative Consultant <em>&amp;</em> Designer</small>
-          </h1>
-
-        </div><!-- end .span6 -->
-        <div class="span3">
-
-          <address class="address-info hide-on-phone">
-            123 Make Believe Drive
-            <br />Some city, xx 54990
-            <br />Some Country
-          </address>
-
-        </div><!-- end .span3 -->
-        <div class="span3">
-
-          <ul class="contact-info hide-on-phone fixed">
-            <li>E-mail: <a href="mailto:#">@@site.com</a></li>
-            <li>Website: <a href="#">john-smith-cv.com</a></li>
-            <li>Phone: <strong>+1-234-567-8900</strong></li>
-          </ul>
-
-        </div><!-- end .span3 -->
-      </div><!-- end .row -->
+    @header()
 
 
-      <!-- // Personal Profile ////////////////////////////////////////////////////////////////////////////////// -->
-
+        <!-- // Personal Profile ////////////////////////////////////////////////////////////////////////////////// -->
 
       <div class="row">
         <div class="span12">
@@ -224,35 +225,7 @@
 
         <!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-
-      <div class="row hide-on-phone">
-        <div class="span6">
-
-          <h1 class="logo">
-            John Smith
-            <br /><small>Creative Consultant <em>&amp;</em> Designer</small>
-          </h1>
-
-        </div><!-- end .span6 -->
-        <div class="span3">
-
-          <address class="address-info">
-            123 Make Believe Drive
-            <br />Some city, xx 54990
-            <br />Some Country
-          </address>
-
-        </div><!-- end .span3 -->
-        <div class="span3">
-
-          <ul class="contact-info fixed">
-            <li>E-mail: <a href="mailto:#">johnsmith@@site.com</a></li>
-            <li>Website: <a href="#">john-smith-cv.com</a></li>
-            <li>Phone: <strong>+1-234-567-8900</strong></li>
-          </ul>
-
-        </div><!-- end .span3 -->
-      </div><!-- end .row -->
+      @header()
 
       <div class="hr hide-on-phone"></div>
 
@@ -464,4 +437,4 @@
 
 
 
-}
+}(l)
