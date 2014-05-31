@@ -21,15 +21,19 @@
       <div class="span3">
 
         <ul class="contact-info hide-on-phone fixed">
-          <li>E-mail: <a href="mailto:#">@@site.com</a></li>
-          <li>Website: <a href="#">john-smith-cv.com</a></li>
-          <li>Phone: <strong>+1-234-567-8900</strong></li>
+          <li>E-mail: <a href="mailto:#">@Messages("email")</a></li>
+          <li>@Messages("phone_label"): <strong>@Messages("phone")</strong></li>
         </ul>
 
       </div><!-- end .span3 -->
     </div><!-- end .row -->
 
   }
+  
+  @listFrom(messageKey: String) = @{
+    Messages(messageKey).split(',').filter(!_.isEmpty).toList
+  }
+ 
 
 @main("Formal CV") {
 
@@ -46,7 +50,7 @@
       <div class="row">
         <div class="span12">
 
-          <h2 class="cv-profile">@Messages("profile")(l)</h2>
+          <h2 class="cv-profile">@Messages("profile")</h2>
 
         </div><!-- end .span12 -->
       </div><!-- end .row -->
@@ -78,13 +82,11 @@
         <div class="span9 cv-item-details">
           <h4>@Messages("experience_"+experience+"_title")</h4>
 
-          <p>@Messages("experience_"+experience+"_summary")</p>
+          <p>@Messages("experience_"+experience+"_summary")
           
           @defining(Messages("experience_"+experience+"_note")) { note =>
-@if(!note.isEmpty){
-          <p><i>@note</i></p>
-}
-        }  
+@if(!note.isEmpty){<br/><span class="note">@note</span>}
+        }  </p>
 
 @defining(Messages("experience_"+experience+"_features").split(";").filter(!_.isEmpty)) { features =>
 @if(!features.isEmpty){
@@ -110,28 +112,26 @@
         </div><!-- end .span9 -->
       </div><!-- end .row -->
 
+@for(education <- listFrom("educations")) {
 
       <!-- cv item -->
       <div class="row cv-item">
         <div class="span3 cv-item-description">
 
-          <h6>Graphic design School</h6>
-          <p>New York City, USA
-            <br /><span class="mute">2005 - 2009</span></p>
+          <h6>@Messages("education_"+education+"_institution")</h6>
+          <p>@Messages("education_"+education+"_location")
+            <span class="mute">@Messages("education_"+education+"_time")</span></p>
 
         </div><!-- end .span3 -->
         <div class="span9 cv-item-details">
 
-          <h4>Management of Creative Business Processes</h4>
+          <h4>@Messages("education_"+education+"_name")</h4>
 
-          <p class="last">Nullam laoreet laoreet lectus quis semper. Morbi ut justo lacus, eu sagittis nibh. Vivamus
-            tempus libero id lectus fermentum iaculis. Mauris eu sapien quam. Cum sociis natoque penatibus
-            et magnis dis parturient montes, nascetur ridiculus mus. Nulla sodales dignissim arcu quis
-            consequat. In nibh justo, ullamcorper at pulvinar sit amet, pellentesque et ipsum.</p>
+          <p class="last">@Messages("education_"+education+"_description").</p>
 
         </div><!-- end .span9 -->
       </div><!-- end .row -->
-
+}
 
       <!-- // Core skills /////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -140,7 +140,7 @@
         <div class="span3">&nbsp;</div>
         <div class="span9">
 
-          <h3 class="cv-section-title">Related skills</h3>
+          <h3 class="cv-section-title">@Messages("language_label")</h3>
 
         </div><!-- end .span9 -->
       </div><!-- end .row -->
@@ -150,49 +150,28 @@
         <div class="span3">&nbsp;</div>
         <div class="span9">
 
+        
           <div class="row">
             <div class="span3 skill">
 
-              <h4>HTML Coding</h4>
-                <!--  To change the level modify class="l-5" with l-1 ... l-10 for skill levels from 1 to 10 -->
-              <div class="level"><span class="l-5">average skillset</span></div>
-              <p>average</p>
+              <h4>@Messages("language_one_name")</h4>
+              <div class="level"><span class="l-10">@Messages("language_one_level")</span></div>
+              <p>@Messages("language_one_level")</p>
 
             </div><!-- end .span3 -->
             <div class="span3 skill">
 
-              <h4>Adobe Photoshop</h4>
-              <div class="level"><span class="l-8">extensive knowledge</span></div>
-              <p>extensive knowledge</p>
+              <h4>@Messages("language_two_name")</h4>
+              <div class="level"><span class="l-8">@Messages("language_two_level")</span></div>
+              <p>@Messages("language_two_level")</p>
 
             </div><!-- end .span3 -->
             <div class="span3 skill">
 
-              <h4>Adobe Indesign</h4>
-              <div class="level"><span class="l-6">good skillset</span></div>
-              <p>good</p>
+              <h4>@Messages("language_three_name")</h4>
+              <div class="level"><span class="l-5">@Messages("language_three_level")</span></div>
+              <p>@Messages("language_three_level")</p>
 
-            </div><!-- end .span3 -->
-          </div><!-- end .row -->
-
-          <div class="row">
-            <div class="span3 skill">
-
-              <h4>English</h4>
-              <div class="level"><span class="l-10">native speaker</span></div>
-              <p>native speaker</p>
-
-            </div><!-- end .span3 -->
-            <div class="span3 skill">
-
-              <h4>French</h4>
-              <div class="level"><span class="l-4">fluent</span></div>
-              <p>fluent</p>
-
-            </div><!-- end .span3 -->
-            <div class="span3">
-
-                &nbsp;
 
             </div><!-- end .span3 -->
           </div><!-- end .row -->
@@ -336,7 +315,7 @@
         <div class="span3">&nbsp;</div>
         <div class="span9">
 
-          <h3 class="cv-section-title">Personal Interests</h3>
+          <h3 class="cv-section-title">@Messages("interests_heading")</h3>
 
         </div><!-- end .span9 -->
       </div><!-- end .row -->
@@ -351,9 +330,9 @@
         <div class="span9 cv-item-details">
 
           <ul class="unstyled last">
-            <li><strong>Reading</strong> (marketing communication, management psychology, design)</li>
-            <li><strong>Playing musical instruments</strong> (guitar)</li>
-            <li><strong>Sports</strong> (gym/ fitness centre, swimming, mountain bike)</li>
+            @for(interest <- listFrom("interests")) {
+              <li><strong>@Messages("interest_"+interest+"_name")</strong><br/>@Messages("interest_"+interest+"_description")</li>
+            }
           </ul>
 
         </div><!-- end .span9 -->
@@ -367,56 +346,35 @@
         <div class="span3">&nbsp;</div>
         <div class="span9">
 
-          <h3 class="cv-section-title">Contact</h3>
+          <h3 class="cv-section-title">@Messages("contact_heading")</h3>
 
         </div><!-- end .span9 -->
       </div><!-- end .row -->
 
 
-      <!-- cv item -->
+ <!-- cv item -->
       <div class="row cv-item" style="margin-bottom:0;">
         <div class="span3 cv-item-description">
 
-          <h6>John Smith</h6>
-          <address class="text-right hide-on-phone">
-            123 Make Believe Drive
-            <br />Some city, Area code 54990
-            <br />Some Country
+          <h6>@Messages("name")</h6>
+          <address class="text-right hide-on-phone">@Messages("street")
+          <br />@Messages("city")
+          <br />@Messages("country")
           </address>
 
         </div><!-- end .span3 -->
         <div class="span9 cv-item-details">
 
           <ul class="contact-info-2 fixed">
-            <li><i class="icon icon-inbox"></i> <a href="mailto:#">john@@site.com</a></li>
+            <li><i class="icon icon-inbox"></i> <a href="mailto:#">@Messages("email")</a></li>
             <li><span class="mute hide-on-phone">&#215;</span></li>
-            <li><i class="icon icon-briefcase"></i> <a href="#">john-smith-cv.com</a></li>
-            <li><span class="mute hide-on-phone">&#215;</span></li>
-            <li><i class="icon icon-bullhorn"></i> +1-234-567-8900</li>
+            <li><i class="icon icon-bullhorn"></i>@Messages("phone")</li>
           </ul>
 
-          <form id="contact-form" class="fixed" action="javascript:void(0);">
-            <fieldset>
-              <p id="formstatus"></p>
-              <div class="row">
-                <div class="span4">
-                  <p><input class="text" type="text" id="name" name="name" value="Your name" onfocus="if(this.value=='Your name')this.value='';" onblur="if(this.value=='')this.value='Your name';" /></p>
-                  <p><input class="text" type="text" id="email" name="email" value="Your e-mail address" onfocus="if(this.value=='Your e-mail address')this.value='';" onblur="if(this.value=='')this.value='Your e-mail address';" /></p>
-                  <p class="last"><input class="text" type="text" id="subject" name="subject" value="Subject" onfocus="if(this.value=='Subject')this.value='';" onblur="if(this.value=='')this.value='Subject';"  /></p>
-                </div><!-- end .span4 -->
-                <div class="span5">
-                  <p><textarea id="message" name="message" rows="3" cols="25"></textarea></p>
-                  <p class="last text-right"><input type="submit" name="submit" class="btn btn-white" value="Send!" /></p>
-                </div><!-- end .span5 -->
-              </div><!-- end .row -->
-            </fieldset>
-          </form><!-- end #contact-form -->
+        
 
         </div><!-- end .span9 -->
       </div><!-- end .row -->
-
-
-      <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
     </div><!-- end .content -->
   </div><!-- end .wrap -->

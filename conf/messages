@@ -1,3 +1,8 @@
+phone_label=Phone
+contact_heading=Contact
+interests_heading=Personal Interests
+language_label=Language skills
+
 name=Anders Bohn Jespersen
 description=Software Architect
 profile=Versatile and strong problem solver on all levels, from technical details to architectural decisions or reflections on team practices and project methods.
@@ -5,6 +10,8 @@ working_experience=Working Experience
 street=E. Suensons Gade 6,6.P 
 city=DK-8200  Aarhus N 
 country=Denmark
+email=anders@bohnjespersen.dk
+phone=+45 4242 6639
 
 experiences=miracle, lenio, ibm, md, intramed, lec, dt, silvan, un, service
 
@@ -25,21 +32,21 @@ experience_lenio_features=Very diverse assignments;Working on multiple platforms
 experience_ibm_title=Advisory IT Architect
 experience_ibm_company=IBM
 experience_ibm_time=12/2004-11/2006
-experience_ibm_summary=Advisory IT Architect in the public sector department of IBM Denmark (Maersk Data was bought by IBM). Development, proposals, consulting and technical team lead.
+experience_ibm_summary=Advisory IT Architect in the public sector department of IBM Denmark. Development, proposals, consulting and technical team lead.
 experience_ibm_note=Note: IBM bought Maersk Data in december 2004 
 experience_ibm_features=   
 
 experience_md_title=IT Architect
 experience_md_company=Maersk Data
 experience_md_time=2000-4/2002 and 5/2003-11/2004
-experience_md_summary=Development, proposals, consulting, team lead at Maersk Data Public (LEC was bought by Maersk Data)
+experience_md_summary=Development, proposals, consulting, team lead at Maersk Data Public
 experience_md_note=Note: Maersk Data bought LEC in may 2003
 experience_md_features=   
 
 experience_intramed_title=Senior Developer
 experience_intramed_company=IntraMed A/S
 experience_intramed_time=4/2002-4/2003
-experience_intramed_summary=Developer on Clinical System Organiser, Anticoagulation using Swing, Struts, JDO
+experience_intramed_summary=Developer on Clinical System Organiser for Anti-coagulation medicines using primarily Swing, Struts and JDO
 experience_intramed_note=
 experience_intramed_features=   
 
@@ -47,22 +54,21 @@ experience_intramed_features=
 experience_lec_title=Developer
 experience_lec_company=LEC
 experience_lec_time=1997-2000
-experience_lec_summary=Proposals, sizing, estimating, performance tuning and team lead
-CICS, Oracle, Java, CORBA
+experience_lec_summary=Proposals, sizing, estimating, performance tuning and team lead CICS, Oracle, Java, CORBA
 experience_lec_note=
 experience_lec_features=   
 
 experience_dt_title=PC Supporter
 experience_dt_company=Danske Traelast
 experience_dt_time=1996-1997
-experience_dt_summary=
-experience_dt_note=Danske Traelast was/is hhe owner of Silvan and was later bought by Wolseley, so it is today called "DT Group"
+experience_dt_summary=PC Server administration, Office and Retail store PC support and maintenance 
+experience_dt_note=Danske Traelast was the owner of Silvan and was later bought by Wolseley, where it today is called "DT Group"
 experience_dt_features=
 
 experience_silvan_title=IT Consultant
 experience_silvan_company=Silvan Kaeden
 experience_silvan_time=1995-1996
-experience_silvan_summary=
+experience_silvan_summary=Office PC support, developing MS Office templates and starting up e-learning on Adobe Product suite 
 experience_silvan_features=
 experience_silvan_note=   
 
@@ -80,3 +86,69 @@ experience_service_summary=Private platoon radio operator in the armored infantr
 experience_service_note= 
 experience_service_features=
 
+educations=hs,hhx,datanom,pl,ibm,hoi
+
+education_hs_name=GCSE/High School
+education_hs_institution=Grenaa Gymnasium
+education_hs_location=
+education_hs_description=Mathematically based, adding chemistry, biology and french 
+education_hs_time=7/1988-6/1991
+
+education_hhx_name=Higher Commercial Examination 
+education_hhx_institution=Handelsskolen i Randers
+education_hhx_location=
+education_hhx_description=Accounting, Law, Marketing, Economics, German language
+education_hhx_time=7/1994-6/1995
+
+education_datanom_name=Datanom Courses in IT
+education_datanom_institution=Aarhus Business College
+education_datanom_location=
+education_datanom_description=Data transmission, Program construction, Local area networks, project management, IT-strategy, Object Orientered Analysis and Design
+education_datanom_time=7/1996-1/2000
+
+education_pl_name=Project Management Program
+education_pl_institution=Maersk Data
+education_pl_location=
+education_pl_description=One year internal project manager courses + on the job coaching 
+education_pl_time=9/2000-8/2001
+
+education_ibm_name=IBM architect courses
+education_ibm_institution=IBM
+education_ibm_location=
+education_ibm_description=Architectural Thinking, Component modelling, Operational modelling
+education_ibm_time=3/2005-11/2006
+
+education_hoi_name=History of Ideas
+education_hoi_institution=Aarhus University
+education_hoi_location=
+education_hoi_description=Part time week-end classes in philosophy and the history of ideas.
+education_hoi_time=8/2002-
+
+
+
+language_one_name=Danish
+language_one_level=Native
+
+language_two_name=English
+language_two_level=Fluent
+
+language_three_name=German
+language_three_level=Basic
+
+
+interests=science,karate,arts,mountains,poker
+
+interest_science_name=Sciences
+interest_science_description=Great general interest in the sciences, and especially in philosophy, religion, history and neurology 
+
+interest_karate_name=Karate and Self Defense
+interest_karate_description=Practising, instructor and referee
+
+interest_arts_name=Arts
+interest_arts_description=Movies, classical music, rock and playing the guitar 
+
+interest_mountains_name=Mountains
+interest_mountains_description=Hiking vacations in the summer and skiing in the winter. 
+
+interest_poker_name=Poker
+interest_poker_description=Great teacher of math, game theory, psychology, emotions, body language, nerve, variance, strategy, and just plain excitement and entertainment.     
