@@ -1,2 +1,82 @@
 name=Anders Bohn Jespersen
 description=Software Architect
+profile=Versatile and strong problem solver on all levels, from technical details to architectural decisions or reflections on team practices and project methods.
+working_experience=Working Experience
+street=E. Suensons Gade 6,6.P 
+city=DK-8200  Aarhus N 
+country=Denmark
+
+experiences=miracle, lenio, ibm, md, intramed, lec, dt, silvan, un, service
+
+experience_miracle_title=IT Architect and Senior Developer
+experience_miracle_company=Miracle
+experience_miracle_time=7/2010–Present
+experience_miracle_summary=Primarily Java/Java EE development on JBoss 7, but also Scala, Play 2, JBoss ESB, jBPM and other technologies.
+experience_miracle_note=Note: Miracle bought Lenio in july 2010. 
+experience_miracle_features=Worked on several smaller projects;Worked through projects end-to-end, from conception to maintenance;Active in the local and company Scala community;Other job tasks included teaching courses, server maintenance, consulting, coaching collegues  
+
+experience_lenio_title=IT architect
+experience_lenio_company=Lenio
+experience_lenio_time=12/2006-6/2010
+experience_lenio_note=
+experience_lenio_summary=Developer on multiple platforms: Java, .NET and Ruby on Rails. Architect assignments on smaller projects, and 18 months lead and core architect on CSC's eTL-project.
+experience_lenio_features=Very diverse assignments;Working on multiple platforms and languages;Putting the first Scala-based project in production in march 2010.   
+
+experience_ibm_title=Advisory IT Architect
+experience_ibm_company=IBM
+experience_ibm_time=12/2004-11/2006
+experience_ibm_summary=Advisory IT Architect in the public sector department of IBM Denmark (Maersk Data was bought by IBM). Development, proposals, consulting and technical team lead.
+experience_ibm_note=Note: IBM bought Maersk Data in december 2004 
+experience_ibm_features=   
+
+experience_md_title=IT Architect
+experience_md_company=Maersk Data
+experience_md_time=2000-4/2002 and 5/2003-11/2004
+experience_md_summary=Development, proposals, consulting, team lead at Maersk Data Public (LEC was bought by Maersk Data)
+experience_md_note=Note: Maersk Data bought LEC in may 2003
+experience_md_features=   
+
+experience_intramed_title=Senior Developer
+experience_intramed_company=IntraMed A/S
+experience_intramed_time=4/2002-4/2003
+experience_intramed_summary=Developer on Clinical System Organiser, Anticoagulation using Swing, Struts, JDO
+experience_intramed_note=
+experience_intramed_features=   
+
+
+experience_lec_title=Developer
+experience_lec_company=LEC
+experience_lec_time=1997-2000
+experience_lec_summary=Proposals, sizing, estimating, performance tuning and team lead
+CICS, Oracle, Java, CORBA
+experience_lec_note=
+experience_lec_features=   
+
+experience_dt_title=PC Supporter
+experience_dt_company=Danske Traelast
+experience_dt_time=1996-1997
+experience_dt_summary=
+experience_dt_note=Danske Traelast was/is hhe owner of Silvan and was later bought by Wolseley, so it is today called "DT Group"
+experience_dt_features=
+
+experience_silvan_title=IT Consultant
+experience_silvan_company=Silvan Kaeden
+experience_silvan_time=1995-1996
+experience_silvan_summary=
+experience_silvan_features=
+experience_silvan_note=   
+
+experience_un_title=Security Guard
+experience_un_company=United Nations Protection Force
+experience_un_time=1992-1994
+experience_un_summary=Two 6-months deployments UN peace keeping force in the Balkans during the civil wars. 
+experience_un_features=Security Guard at UN HQ and Forward HQ in Kiseljak and Sarajevo, Bosnia;Checkpoint and Observation posts in Sector North, Croatia
+experience_un_note=
+   
+experience_service_title=National Service
+experience_service_company=Danish Army Infantry
+experience_service_time=1991-1992
+experience_service_summary=Private platoon radio operator in the armored infantry
+experience_service_note= 
+experience_service_features=
+
