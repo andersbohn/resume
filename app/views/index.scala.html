@@ -1,384 +1,252 @@
-@(experiences: List[String])(implicit l: Lang)
-
-  @header() = {
-    <div class="row">
-      <div class="span6">
-
-        <h1 class="logo">
-          @Messages("name")
-          <br /><small>@Messages("description")</small>
-        </h1>
-
-      </div><!-- end .span6 -->
-      <div class="span3">
-
-        <address class="address-info hide-on-phone">@Messages("street")
-          <br />@Messages("city")
-          <br />@Messages("country")
-        </address>
-
-      </div><!-- end .span3 -->
-      <div class="span3">
-
-        <ul class="contact-info hide-on-phone fixed">
-          <li>E-mail: <a href="mailto:#">@Messages("email")</a></li>
-          <li>@Messages("phone_label"): <strong>@Messages("phone")</strong></li>
-        </ul>
-
-      </div><!-- end .span3 -->
-    </div><!-- end .row -->
-
-  }
-  
-  @listFrom(messageKey: String) = @{
-    Messages(messageKey).split(',').filter(!_.isEmpty).toList
-  }
+@()(implicit l: Lang)
  
+@header() = {
+<div class="row">
+	<div class="span6">
+
+		<h1 class="logo">
+			@Messages("name") <br />
+			<small>@Messages("description")</small>
+		</h1>
+
+	</div>
+	<div class="span3">
+
+		<ul class="contact-info hide-on-phone fixed">
+			<li>E-mail: <a href="mailto:#">@Messages("email")</a></li>
+			<li>@Messages("phone_label"): <strong>@Messages("phone")</strong></li>
+		</ul>
+
+	</div>
+
+	<div class="span3">
+
+		<img src='@routes.Assets.at("images/profilfoto1.jpg")'
+			class="responsive-img profile" alt="" />
+
+	</div>
+
+</div>
+
+<!--  div class="hr hide-on-phone"></div-->
+} 
+
+@listFrom(messageKey: String) = @{
+  Messages(messageKey).split(',').map(_.trim).filter(!_.isEmpty).toList 
+}
+
+@cvItems(prefix:String, list:String, headerKey:String)= {
+     <div class="row">
+			<div class="span3">&nbsp;</div>
+			<div class="span9">
+
+				<h3 class="cv-section-title">@Messages(headerKey)</h3>
+
+			</div>
+		</div>
+
+		@for(experience <- list.split(",").map(_.trim).toList) {
+
+		<div class="row cv-item">
+			<div class="span3 cv-item-description">
+
+				<h6>@Messages(s"${prefix}_${experience}_company")</h6>
+				<p>
+					<span class="mute">@Messages(s"${prefix}_${experience}_time")</span>
+				</p>
+
+			</div>
+
+			<div class="span9 cv-item-details">
+				<h4>@Messages(s"${prefix}_${experience}_title")</h4>
+
+				<p>
+					@Messages(s"${prefix}_${experience}_summary")
+
+  
+					@defining(Messages(s"${prefix}_${experience}_note")) { note =>
+					@if(!note.isEmpty){<br />
+					<span class="note">@note</span>
+					} 
+					}
+				</p>
+
+				@defining(Messages(s"${prefix}_${experience}_features").split(";").filter(!_.isEmpty)) { features => 
+				  @if(!features.isEmpty){
+				    <ul class="disc last">
+					  @for(feature <- features) {
+					    <li>@feature</li> 
+					  }
+				     </ul>
+				  }
+				}
+
+			</div>
+		</div>
+		}
+}
+
 
 @main("Formal CV") {
 
-  <div class="wrap">
-    <div class="content">
+<div class="wrap">
+	<div class="content">
 
-        <!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		@header()
 
-    @header()
+		<div class="row">
+			<div class="span12">
 
+				<h2 class="cv-profile">@Messages("profile")</h2>
 
-        <!-- // Personal Profile ////////////////////////////////////////////////////////////////////////////////// -->
+			</div>
+		</div>
 
-      <div class="row">
-        <div class="span12">
+        @cvItems("assignment","mkplanner,etl, minimaks, ctr","assignments_heading")
+			
+			
+	</div>
 
-          <h2 class="cv-profile">@Messages("profile")</h2>
+</div>
 
-        </div><!-- end .span12 -->
-      </div><!-- end .row -->
+<div class="wrap">
+	<div class="content">
 
+		@header()
+		
+		@cvItems("experience","miracle, lenio, ibm, md, intramed, lec, dt","working_experience")
 
-      <!-- // Working experience //////////////////////////////////////////////////////////////////////////////// -->
+	</div>
 
+</div>
 
-      <div class="row">
-        <div class="span3">&nbsp;</div>
-        <div class="span9">
+<div class="wrap">
+	<div class="content">
 
-          <h3 class="cv-section-title">@Messages("working_experience")</h3>
+		@header()
 
-        </div><!-- end .span9 -->
-      </div><!-- end .row -->
+		@cvItems("experience","silvan, un, service","working_experience_cont")
 
+		<div class="row">
+			<div class="span3">&nbsp;</div>
+			<div class="span9">
 
-      <!-- cv items -->
-@for(experience <- experiences) {
-     
-      <div class="row cv-item">
-        <div class="span3 cv-item-description">
+				<h3 class="cv-section-title">Education</h3>
 
-          <h6>@Messages("experience_"+experience+"_company")</h6>
-          <p><span class="mute">@Messages("experience_"+experience+"_time")</span></p>
+			</div>
+		</div>
 
-        </div><!-- end .span3 -->
-        <div class="span9 cv-item-details">
-          <h4>@Messages("experience_"+experience+"_title")</h4>
+		@for(education <- listFrom("educations")) {
 
-          <p>@Messages("experience_"+experience+"_summary")
-          
-          @defining(Messages("experience_"+experience+"_note")) { note =>
-@if(!note.isEmpty){<br/><span class="note">@note</span>}
-        }  </p>
+		<div class="row cv-item">
+			<div class="span3 cv-item-description">
 
-@defining(Messages("experience_"+experience+"_features").split(";").filter(!_.isEmpty)) { features =>
-@if(!features.isEmpty){
-          <ul class="disc last">
-            @for(feature <- features) {
-              <li>@feature</li>
-            }
-          </ul>
-}}
+				<h6>@Messages("education_"+education+"_institution")</h6>
+				<p>
+					@Messages("education_"+education+"_location") <span class="mute">@Messages("education_"+education+"_time")</span>
+				</p>
 
-        </div><!-- end .span9 -->
-      </div><!-- end .row -->
-}
-      <!-- // Education  //////////////////////////////////////////////////////////////////////////////////////// -->
+			</div>
 
+			<div class="span9 cv-item-details">
 
-      <div class="row">
-        <div class="span3">&nbsp;</div>
-        <div class="span9">
+				<h4>@Messages("education_"+education+"_name")</h4>
 
-          <h3 class="cv-section-title">Education</h3>
+				<p class="last">@Messages("education_"+education+"_description").</p>
 
-        </div><!-- end .span9 -->
-      </div><!-- end .row -->
+			</div>
 
-@for(education <- listFrom("educations")) {
+		</div>
+		}
+		
 
-      <!-- cv item -->
-      <div class="row cv-item">
-        <div class="span3 cv-item-description">
 
-          <h6>@Messages("education_"+education+"_institution")</h6>
-          <p>@Messages("education_"+education+"_location")
-            <span class="mute">@Messages("education_"+education+"_time")</span></p>
+	</div>
 
-        </div><!-- end .span3 -->
-        <div class="span9 cv-item-details">
+</div>
 
-          <h4>@Messages("education_"+education+"_name")</h4>
+<div class="wrap">
+	<div class="content">
+		@header()
 
-          <p class="last">@Messages("education_"+education+"_description").</p>
+		<div class="row">
+			<div class="span3">&nbsp;</div>
+			<div class="span9">
+				<h3 class="cv-section-title">@Messages("personal_heading")</h3>
+			</div>
+		</div>
 
-        </div><!-- end .span9 -->
-      </div><!-- end .row -->
-}
+		<div class="row cv-item">
+			<div class="span3 cv-item-description">&nbsp;</div>
+			<div class="span9 cv-item-details">
 
-      <!-- // Core skills /////////////////////////////////////////////////////////////////////////////////////// -->
+				<ul class="unstyled last">
+					<li><strong>@Messages("born_label")</strong><br />
+					@Messages("born")</li>
+					<li><strong>@Messages("citizenship_label")</strong><br />
+					@Messages("citizenship")</li>
+					<li><strong>@Messages("status_label")</strong><br />
+					@Messages("status")</li>
+				</ul>
 
+			</div>
+		</div>
 
-      <div class="row">
-        <div class="span3">&nbsp;</div>
-        <div class="span9">
 
-          <h3 class="cv-section-title">@Messages("language_label")</h3>
+		<div class="row">
+			<div class="span3">&nbsp;</div>
+			<div class="span9">
+				<h3 class="cv-section-title">@Messages("interests_heading")</h3>
+			</div>
+		</div>
 
-        </div><!-- end .span9 -->
-      </div><!-- end .row -->
+		<div class="row cv-item">
+			<div class="span3 cv-item-description">&nbsp;</div>
+			<div class="span9 cv-item-details">
 
+				<ul class="unstyled last">
+					@for(interest <- listFrom("interests")) {
+					<li><strong>@Messages("interest_"+interest+"_name")</strong><br />@Messages("interest_"+interest+"_description")</li>
+					}
+				</ul>
 
-      <div class="row">
-        <div class="span3">&nbsp;</div>
-        <div class="span9">
+			</div>
+		</div>
 
-        
-          <div class="row">
-            <div class="span3 skill">
+		<div class="row">
+			<div class="span3">&nbsp;</div>
+			<div class="span9">
 
-              <h4>@Messages("language_one_name")</h4>
-              <div class="level"><span class="l-10">@Messages("language_one_level")</span></div>
-              <p>@Messages("language_one_level")</p>
+				<h3 class="cv-section-title">@Messages("contact_heading")</h3>
 
-            </div><!-- end .span3 -->
-            <div class="span3 skill">
+			</div>
+		</div>
 
-              <h4>@Messages("language_two_name")</h4>
-              <div class="level"><span class="l-8">@Messages("language_two_level")</span></div>
-              <p>@Messages("language_two_level")</p>
+		<div class="row cv-item" style="margin-bottom: 0;">
+			<div class="span3 cv-item-description">
 
-            </div><!-- end .span3 -->
-            <div class="span3 skill">
+				<h6>@Messages("name")</h6>
+				<address class="text-right hide-on-phone">
+					@Messages("street") <br />@Messages("city") <br />@Messages("country")
+				</address>
 
-              <h4>@Messages("language_three_name")</h4>
-              <div class="level"><span class="l-5">@Messages("language_three_level")</span></div>
-              <p>@Messages("language_three_level")</p>
+			</div>
 
+			<div class="span9 cv-item-details">
 
-            </div><!-- end .span3 -->
-          </div><!-- end .row -->
+				<ul class="contact-info-2 fixed">
+					<li><i class="icon icon-inbox"></i> <a href="mailto:#">@Messages("email")</a></li>
+					<li><span class="mute hide-on-phone">&#215;</span></li>
+					<li><i class="icon icon-bullhorn"></i>@Messages("phone")</li>
+				</ul>
 
-        </div><!-- end .span9 -->
-      </div><!-- end .row -->
+				<p class="credits no-print">
+					Note: Responsive CV HTML-template courtesy of <a
+						href="http://themeforest.net/user/completethemes">completethemes</a>
+			</div>
+		</div>
 
-
-      <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-    </div><!-- end .content -->
-  </div><!-- end .wrap -->
-
-  <div class="wrap">
-    <div class="content">
-
-        <!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-      @header()
-
-      <div class="hr hide-on-phone"></div>
-
-
-        <!-- // Portfolio  //////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-      <div class="row">
-        <div class="span3">&nbsp;</div>
-        <div class="span9">
-
-          <h3 class="cv-section-title">Portfolio</h3>
-
-        </div><!-- end .span9 -->
-      </div><!-- end .row -->
-
-
-      <div class="portfolio-items">
-        <div class="flexslider">
-          <ul class="slides">
-
-            <li>
-
-              <div class="row">
-                <div class="span6">
-
-                  <a href="@routes.Assets.at("_content/880x350-1.png")" rel="imagebox[portfolio]">
-                    <img src="@routes.Assets.at("_content/370x300.png")" class="responsive-img" alt="" />
-                  </a>
-
-                </div><!-- end .span6 -->
-                <div class="span6">
-
-                  <br />
-                  <h5 class="mute">02-03-2013 <span class="mute"> &#215; </span> Client Name</h5>
-                  <h2 class="last">Praese lorem vulputate viverra</h2><br />
-
-                  <p><strong>Objectives:</strong> Vivamus ut justo at purus vestibulum interdum a a lorem.
-                    Aenean auctor felis ut lacus porttitor rutrum. Pellentesque habitant morbi tristique
-                    senectus et netus et malesuada fames. </p>
-
-                  <p><strong>Solutions:</strong> Aliquam eleifend dolor / Non rutrum quis sem</p>
-
-                  <p class="last"><a href="#" class="btn btn-white">view project &rarr;</a></p>
-
-                </div><!-- end .span6 -->
-              </div><!-- end .row -->
-
-            </li>
-
-            <li>
-
-              <div class="row">
-                <div class="span8">
-
-                  <a href="@routes.Assets.at("_content/880x350-1.png")" rel="imagebox[portfolio]">
-                    <img src="@routes.Assets.at("_content/500x300.png")" class="responsive-img" alt="" />
-                  </a>
-
-                </div><!-- end .span6 -->
-                <div class="span4">
-
-                  <br />
-                  <h5 class="mute">02-03-2013 <span class="mute"> &#215; </span> Client Name</h5>
-                  <h2 class="last">Vulputate viverra</h2><br />
-
-                  <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.
-                    Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                  <p>Ut nulla lorem, ultrices sit amet gravida eget, placerat ut magna.</p>
-
-                  <p class="last"><a href="#" class="btn btn-white">view project &rarr;</a></p>
-
-                </div><!-- end .span6 -->
-              </div><!-- end .row -->
-
-            </li>
-
-            <li>
-
-              <div class="row">
-                <div class="span6">
-
-                  <a href="@routes.Assets.at("_content/880x350-1.png")" rel="imagebox[portfolio]">
-                    <img src="@routes.Assets.at("_content/370x300-2.png")" class="responsive-img" alt="" />
-                  </a>
-
-                </div><!-- end .span6 -->
-                <div class="span6">
-
-                  <br />
-                  <h5 class="mute">02-03-2013 <span class="mute"> &#215; </span> Client Name</h5>
-                  <h2 class="last">Donec scelerisque aliquet</h2><br />
-
-                  <blockquote>
-                    <p>&#8220; Vivamus ut justo at purus vestibulum interdum a a lorem. Aenean auctor felis ut lacus porttitor rutrum.
-                      Ut nulla lorem, ultrices sit amet gravida eget, placerat ut magna.  &#8221;</p>
-                  </blockquote>
-
-                  <ul class="checklist last">
-                    <li>Nunc in dolor id lacus dictum euismod molestie ut </li>
-                    <li>Donec eget nunc pulvinar tortor sollicitudin consectetur </li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-                  </ul>
-
-                </div><!-- end .span6 -->
-              </div><!-- end .row -->
-
-            </li>
-
-
-
-          </ul><!-- end .slides -->
-        </div><!-- end .flexslider -->
-      </div><!-- end .portfolio-items -->
-
-
-      <!-- // Personal Interests //////////////////////////////////////////////////////////////////////////////// -->
-
-
-      <div class="row">
-        <div class="span3">&nbsp;</div>
-        <div class="span9">
-
-          <h3 class="cv-section-title">@Messages("interests_heading")</h3>
-
-        </div><!-- end .span9 -->
-      </div><!-- end .row -->
-
-      <!-- cv item -->
-      <div class="row cv-item">
-        <div class="span3 cv-item-description">
-
-            &nbsp;
-
-        </div><!-- end .span3 -->
-        <div class="span9 cv-item-details">
-
-          <ul class="unstyled last">
-            @for(interest <- listFrom("interests")) {
-              <li><strong>@Messages("interest_"+interest+"_name")</strong><br/>@Messages("interest_"+interest+"_description")</li>
-            }
-          </ul>
-
-        </div><!-- end .span9 -->
-      </div><!-- end .row -->
-
-
-      <!-- // Contact Information /////////////////////////////////////////////////////////////////////////////// -->
-
-
-      <div class="row">
-        <div class="span3">&nbsp;</div>
-        <div class="span9">
-
-          <h3 class="cv-section-title">@Messages("contact_heading")</h3>
-
-        </div><!-- end .span9 -->
-      </div><!-- end .row -->
-
-
- <!-- cv item -->
-      <div class="row cv-item" style="margin-bottom:0;">
-        <div class="span3 cv-item-description">
-
-          <h6>@Messages("name")</h6>
-          <address class="text-right hide-on-phone">@Messages("street")
-          <br />@Messages("city")
-          <br />@Messages("country")
-          </address>
-
-        </div><!-- end .span3 -->
-        <div class="span9 cv-item-details">
-
-          <ul class="contact-info-2 fixed">
-            <li><i class="icon icon-inbox"></i> <a href="mailto:#">@Messages("email")</a></li>
-            <li><span class="mute hide-on-phone">&#215;</span></li>
-            <li><i class="icon icon-bullhorn"></i>@Messages("phone")</li>
-          </ul>
-
-        
-
-        </div><!-- end .span9 -->
-      </div><!-- end .row -->
-
-    </div><!-- end .content -->
-  </div><!-- end .wrap -->
-
-
+	</div>
+</div>
 
 }(l)

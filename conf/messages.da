@@ -1,6 +1,15 @@
 phone_label=Telefon
-contact_heading=Kontakt
+contact_heading=Kontaktinformation
+assignments_heading=Udvalgte opgaver
 interests_heading=Interesser
+language_label=Sprog
+personal_heading=Personlig information
+born_label=Født
+citizenship_label=Statsborgerskab
+status_label=Civil status
+working_experience=Ansættelser
+working_experience_cont=Ansættelser (fortsat)
+
 
 name=Anders Bohn Jespersen
 description=Software Arkitekt
@@ -8,3 +17,175 @@ profile=Alsidig og stærk problemløser på alle niveauer, fra tekniske detaljer
 working_experience=Erfaring
 city=8200  Aarhus N 
 country=Danmark
+
+born=16. februar 1972, Grenaa, Denmark
+citizenship=Dansk
+status=Single
+
+assignment_mkplanner_title=Scala udvikler
+assignment_mkplanner_summary=Komplet reimplemnering af el-handels og rapporteringssystem i Scala og på JBoss ESB/JavaEE.    
+assignment_mkplanner_note= 
+assignment_mkplanner_features=Daglige registreringer og beregninger på markedsbud.;Kontrolrum med overbliksbilleder for alle produktions- og forbrugs-kunder;Automatiseret start og stop af kraftværker iht løbende indkommende aktiveringer af regulerkraft.   
+
+
+
+assignment_etl_company=Tinglysningsretten
+
+assignment_etl_title=It-arkitekt
+assignment_etl_summary=Lead Architect/arkitekt på kerne-team for Tinglysningsretten 
+assignment_etl_note=Note: Lejet ud fra Lenio til kontraktholderen, CSC 
+assignment_etl_features=Negotiations on design of message formats and digitial signatures;Core participator on the domain modelling for complex real estate trade, mortgages and easements.;Inventor, designer and implementor for template based registrations 
+
+assignment_minimaks_company=Danish National Survey and Cadastre
+assignment_minimaks_time=2004
+assignment_minimaks_title=miniMAKS-proposal Lead Architect
+assignment_minimaks_summary=Lead Architect on IBM's bid on miniMAKS for the Danish National Survey and Cadastre, an EU-tender for new GIS and administrative system. 
+assignment_minimaks_note=
+assignment_minimaks_features=Strong focus on creating an SOA solution;Advising and assisting the implementation team after the assignment was won.
+
+assignment_ctr_company=Danish Medicines Agency
+assignment_ctr_time=2000
+assignment_ctr_title=IT Architect on Central Reimbursement Register Implementation
+assignment_ctr_summary=IT Architect on the implementation of the Central Reimbursement Register (CTR) for the Danish Medicines Agency, a new medicine register for medicine reimbursement. 
+assignment_ctr_note=
+assignment_ctr_features=XML-integration with 300+ pharmacies throughout Denmark.;Extremely tight schedule with planned launch on 1st of january 2000(!)
+
+
+
+experience_miracle_title=IT Architect and Senior Developer
+experience_miracle_company=Miracle
+experience_miracle_time=7/2010–Present
+experience_miracle_summary=Primarily Java/Java EE development on JBoss 7, but also Scala, Play 2, JBoss ESB, jBPM and other technologies.
+experience_miracle_note=Note: Miracle bought Lenio in july 2010. 
+experience_miracle_features=Worked on several smaller projects;Worked through projects end-to-end, from conception to maintenance;Active in the local and company Scala community;Other job tasks included teaching courses, server maintenance, consulting, coaching collegues;Security cleared to "Secret" by the Danish Security and Intelligence Service in order to work on Nets' servers.      
+
+experience_lenio_title=IT architect
+experience_lenio_company=Lenio
+experience_lenio_time=12/2006-6/2010
+experience_lenio_note=
+experience_lenio_summary=Developer on multiple platforms: Java, .NET and Ruby on Rails. Architect assignments on smaller projects, and 18 months lead and core architect on CSC's eTL-project.
+experience_lenio_features=Very diverse assignments;Working on multiple platforms and languages;Putting the first Scala-based project in production in march 2010.   
+
+experience_ibm_title=Advisory IT Architect
+experience_ibm_company=IBM
+experience_ibm_time=12/2004-11/2006
+experience_ibm_summary=Advisory IT Architect in the public sector department of IBM Denmark. Development, proposals, consulting and technical team lead.
+experience_ibm_note=Note: IBM bought Maersk Data in december 2004 
+experience_ibm_features=   
+
+experience_md_title=IT Architect
+experience_md_company=Maersk Data
+experience_md_time=2000-4/2002 and 5/2003-11/2004
+experience_md_summary=Development, proposals, consulting, team lead at Maersk Data Public
+experience_md_note=Note: Maersk Data bought LEC in may 2003
+experience_md_features=   
+
+experience_intramed_title=Senior Developer
+experience_intramed_company=IntraMed A/S
+experience_intramed_time=4/2002-4/2003
+experience_intramed_summary=Developer on Clinical System Organiser for Anti-coagulation medicines using primarily Swing, Struts and JDO
+experience_intramed_note=
+experience_intramed_features=   
+
+
+experience_lec_title=Developer
+experience_lec_company=LEC
+experience_lec_time=1997-2000
+experience_lec_summary=Proposals, sizing, estimating, performance tuning and team lead CICS, Oracle, Java, CORBA
+experience_lec_note=
+experience_lec_features=   
+
+experience_dt_title=PC Supporter
+experience_dt_company=Danske Traelast
+experience_dt_time=1996-1997
+experience_dt_summary=PC Server administration, Office and Retail store PC support and maintenance 
+experience_dt_note=Danske Traelast who owns Silvan was later bought by Wolseley, and is now called "DT Group"
+experience_dt_features=
+
+experience_silvan_title=IT Consultant
+experience_silvan_company=Silvan Kaeden
+experience_silvan_time=1995-1996
+experience_silvan_summary=Office PC support, developing MS Office templates and starting up e-learning on Adobe Product suite 
+experience_silvan_features=
+experience_silvan_note=   
+
+experience_un_title=Security Guard
+experience_un_company=United Nations Protection Force
+experience_un_time=1992-1994
+experience_un_summary=Two 6-months deployments in the UN peace keeping force in the Balkans during the civil wars. 
+experience_un_features=Security Guard at UN HQ and Forward HQ in Kiseljak and Sarajevo, Bosnia;Checkpoint and Observation posts in Sector North, Croatia
+experience_un_note=
+   
+experience_service_title=National Service
+experience_service_company=Danish Army Infantry
+experience_service_time=1991-1992
+experience_service_summary=Private platoon radio operator in the armored infantry
+experience_service_note= 
+experience_service_features=
+
+educations=hs,hhx,datanom,pl,ibm,hoi
+
+education_hs_name=GCSE/High School
+education_hs_institution=Grenaa Gymnasium
+education_hs_location=
+education_hs_description=Mathematically based, adding chemistry, biology and french 
+education_hs_time=7/1988-6/1991
+
+education_hhx_name=Higher Commercial Examination 
+education_hhx_institution=Handelsskolen i Randers
+education_hhx_location=
+education_hhx_description=Accounting, Law, Marketing, Economics, German language
+education_hhx_time=7/1994-6/1995
+
+education_datanom_name=Datanom Courses in IT
+education_datanom_institution=Aarhus Business College
+education_datanom_location=
+education_datanom_description=Data transmission, Program construction, Local area networks, project management, IT-strategy, Object Orientered Analysis and Design
+education_datanom_time=7/1996-1/2000
+
+education_pl_name=Project Management Program
+education_pl_institution=Maersk Data
+education_pl_location=
+education_pl_description=One year internal project manager courses + on the job coaching 
+education_pl_time=9/2000-8/2001
+
+education_ibm_name=IBM architect courses
+education_ibm_institution=IBM
+education_ibm_location=
+education_ibm_description=Architectural Thinking, Component modelling, Operational modelling
+education_ibm_time=3/2005-11/2006
+
+education_hoi_name=History of Ideas
+education_hoi_institution=Aarhus University
+education_hoi_location=
+education_hoi_description=Part time week-end classes in philosophy and the history of ideas.
+education_hoi_time=8/2002-
+
+
+
+language_one_name=Danish
+language_one_level=Native
+
+language_two_name=English
+language_two_level=Fluent
+
+language_three_name=German
+language_three_level=Basic
+
+
+interests=science,karate,arts,mountains,poker
+
+interest_science_name=Sciences
+interest_science_description=Great general interest in the sciences, and especially in philosophy, religion, history and neurology 
+
+interest_karate_name=Karate and Self Defense
+interest_karate_description=Practising, instructor and referee
+
+interest_arts_name=Arts
+interest_arts_description=Movies, classical music, rock and playing the guitar 
+
+interest_mountains_name=Mountains
+interest_mountains_description=Hiking vacations in the summer and skiing in the winter. 
+
+interest_poker_name=Poker
+interest_poker_description=Great teacher of math, game theory, psychology, emotions, body language, nerve, variance, strategy, and just plain excitement and entertainment.     

@@ -1,26 +1,65 @@
 phone_label=Phone
 contact_heading=Contact
+assignments_heading=Select assignments
 interests_heading=Personal Interests
 language_label=Language skills
+personal_heading=Personal information
+born_label=Born
+citizenship_label=Citizenship
+status_label=Civilian status
+working_experience=Employments
+working_experience_cont=Employments (cont.)
 
 name=Anders Bohn Jespersen
 description=Software Architect
 profile=Versatile and strong problem solver on all levels, from technical details to architectural decisions or reflections on team practices and project methods.
-working_experience=Working Experience
 street=E. Suensons Gade 6,6.P 
 city=DK-8200  Aarhus N 
 country=Denmark
 email=anders@bohnjespersen.dk
 phone=+45 4242 6639
+born=16th of February 1972, Grenaa, Denmark
+citizenship=Danish
+status=Single
 
-experiences=miracle, lenio, ibm, md, intramed, lec, dt, silvan, un, service
+assignment_mkplanner_company=Markedskraft
+assignment_mkplanner_title=Scala Developer
+assignment_mkplanner_time=2009-2014
+assignment_mkplanner_summary=Complete rewrite of an existing power trading and reporting system into pure Scala running on JBoss ESB/JavaEE.    
+assignment_mkplanner_note= 
+assignment_mkplanner_features=Daily registration and calculations on bids on the market.;Control room functions with aggregate view of all production and consumption clients;Automated starting and stopping of production/consumption at connected facilities when bids on regulating power are activated.   
+
+
+
+assignment_etl_company=Land Registration Court
+assignment_etl_time=2007-2009
+assignment_etl_title=IT Architect
+assignment_etl_summary=Lead Architect/Core Architect on eTL for the Courts of Denmark (Land Registration Court) 
+assignment_etl_note=Note: Hired in from Lenio by contract owner, CSC 
+assignment_etl_features=Negotiations on design of message formats and digitial signatures;Core participator on the domain modelling for complex real estate trade, mortgages and easements.;Inventor, designer and implementor for template based registrations 
+
+assignment_minimaks_company=Danish National Survey and Cadastre
+assignment_minimaks_time=2004
+assignment_minimaks_title=miniMAKS-proposal Lead Architect
+assignment_minimaks_summary=Lead Architect on IBM's bid on miniMAKS for the Danish National Survey and Cadastre, an EU-tender for new GIS and administrative system. 
+assignment_minimaks_note=
+assignment_minimaks_features=Strong focus on creating an SOA solution;Advising and assisting the implementation team after the assignment was won.
+
+assignment_ctr_company=Danish Medicines Agency
+assignment_ctr_time=2000
+assignment_ctr_title=IT Architect on Central Reimbursement Register Implementation
+assignment_ctr_summary=IT Architect on the implementation of the Central Reimbursement Register (CTR) for the Danish Medicines Agency, a new medicine register for medicine reimbursement. 
+assignment_ctr_note=
+assignment_ctr_features=XML-integration with 300+ pharmacies throughout Denmark.;Extremely tight schedule with planned launch on 1st of january 2000(!)
+
+
 
 experience_miracle_title=IT Architect and Senior Developer
 experience_miracle_company=Miracle
 experience_miracle_time=7/2010–Present
 experience_miracle_summary=Primarily Java/Java EE development on JBoss 7, but also Scala, Play 2, JBoss ESB, jBPM and other technologies.
 experience_miracle_note=Note: Miracle bought Lenio in july 2010. 
-experience_miracle_features=Worked on several smaller projects;Worked through projects end-to-end, from conception to maintenance;Active in the local and company Scala community;Other job tasks included teaching courses, server maintenance, consulting, coaching collegues  
+experience_miracle_features=Worked on several smaller projects;Worked through projects end-to-end, from conception to maintenance;Active in the local and company Scala community;Other job tasks included teaching courses, server maintenance, consulting, coaching collegues;Security cleared to "Secret" by the Danish Security and Intelligence Service in order to work on Nets' servers.      
 
 experience_lenio_title=IT architect
 experience_lenio_company=Lenio
@@ -62,7 +101,7 @@ experience_dt_title=PC Supporter
 experience_dt_company=Danske Traelast
 experience_dt_time=1996-1997
 experience_dt_summary=PC Server administration, Office and Retail store PC support and maintenance 
-experience_dt_note=Danske Traelast was the owner of Silvan and was later bought by Wolseley, where it today is called "DT Group"
+experience_dt_note=Danske Traelast who owns Silvan was later bought by Wolseley, and is now called "DT Group"
 experience_dt_features=
 
 experience_silvan_title=IT Consultant
@@ -75,7 +114,7 @@ experience_silvan_note=
 experience_un_title=Security Guard
 experience_un_company=United Nations Protection Force
 experience_un_time=1992-1994
-experience_un_summary=Two 6-months deployments UN peace keeping force in the Balkans during the civil wars. 
+experience_un_summary=Two 6-months deployments in the UN peace keeping force in the Balkans during the civil wars. 
 experience_un_features=Security Guard at UN HQ and Forward HQ in Kiseljak and Sarajevo, Bosnia;Checkpoint and Observation posts in Sector North, Croatia
 experience_un_note=
    

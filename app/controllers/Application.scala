@@ -8,11 +8,11 @@ import play.api.i18n.Lang
 object Application extends Controller {
 
   def index = Action {
-    Ok(views.html.index(List("Your new application is ready.")))
+    Ok(views.html.index())
   }
 
   def test = withLang { implicit request =>
-    Ok(views.html.index(Messages("experiences").split(",").map(_.trim).toList))
+    Ok(views.html.index())
   }
 
 import play.api.Play.current;
