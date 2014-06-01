@@ -11,7 +11,7 @@ object Application extends Controller {
     Ok(views.html.index())
   }
 
-  def test = withLang { implicit request =>
+  def cv = withLang { implicit request =>
     Ok(views.html.index())
   }
 
