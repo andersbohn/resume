@@ -2,5 +2,12 @@ Resume Play application
 =====================================
 
 TODO:
- - Insert picture in header in place of contact info ?
- - 
+ - have sbt build the project (for heroku)
+   web: target/universal/stage/bin/ExampleBootStrap -Dhttp.port=$PORT 
+ - make run on heroku
+   web: target/universal/stage/bin/ExampleBootStrap -Dhttp.port=$PORT 
+ - fix missing grey boxes (or the resulting bad alignement) in print on the left titles
+ 
+ - maybe add scaladays and so ?
+
+ 

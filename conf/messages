@@ -1,9 +1,9 @@
 phone_label=Phone
 contact_heading=Contact
-assignments_heading=Selected assignments
+assignments_heading=Selected Assignments
 interests_heading=Personal Interests
-language_label=Language skills
-personal_heading=Personal information
+language_label=Language Skills
+personal_heading=Personal Information
 born_label=Born
 citizenship_label=Citizenship
 status_label=Civilian status
@@ -13,7 +13,7 @@ references_heading=Selected References
 
 name=Anders Bohn Jespersen
 description=Software Architect
-profile=Versatile and strong problem solver on all levels, from technical details to architectural decisions or reflections on team practices and project methods.
+profile=Versatile and strong problem solver on all levels from technical details to architectural decisions or reflections on team practices and project methods.
 street=E. Suensons Gade 6,6.P 
 city=DK-8200  Aarhus N 
 country=Denmark
@@ -35,7 +35,7 @@ assignment_mkplanner_title=Scala Developer on Power Trading System
 assignment_mkplanner_time=2009-2014
 assignment_mkplanner_summary=Complete rewrite in Scala of an existing system for power trading and reporting.    
 assignment_mkplanner_note= 
-assignment_mkplanner_features=Front-end built with Adobe Flex, and back-end with JBoss ESB, JavaEE and Scala.;Daily registration and calculations on bids on the market.;Control room functions with aggregate view of all production and consumption clients;Automated starting and stopping of production/consumption at connected facilities when bids on regulating power are activated.   
+assignment_mkplanner_features=Front-end built with Adobe Flex and back-end with JBoss ESB, JavaEE and Scala.;Daily registration and calculations on bids on the market.;Control room functions with aggregate view of all production and consumption clients;Automated starting and stopping of production/consumption at connected facilities when bids on regulating power are activated.   
 
 
 
@@ -43,7 +43,7 @@ assignment_etl_company=Land Registration Court
 assignment_etl_time=2007-2009
 assignment_etl_title=IT Architect on Land Registration System
 assignment_etl_summary=Lead Architect/Core Architect on eTL for the Courts of Denmark, the Land Registration Court. Complete move to electronic registration of deeds, mortgages and easements on all real estate in Denmark.  
-assignment_etl_note=Note: Hired in from Lenio by contract owner, CSC, as Lead Architect. After quickly realising the massive scope and unrealistic timetable, the project was moved to Copenhagen and reestablished there with 30+ participants.   
+assignment_etl_note=Note: Hired in from Lenio by contract owner, CSC, as Lead Architect. Due to severe time/scope/resource miscalculations the project was reestablished in Copenhagen with a new on-site CSC Lead Architect.   
 assignment_etl_features=Core participator on the domain modelling for complex rural real estate deeds, mortgages and easements.;Negotiations on design of corresponding message formats and digitial signatures;Inventor, designer and implementor for template based, pre-approved registrations. 
 
 assignment_minimaks_company=Danish National Survey and Cadastre
@@ -51,7 +51,7 @@ assignment_minimaks_time=2004
 assignment_minimaks_title=Lead Architect on miniMAKS-proposal 
 assignment_minimaks_summary=Lead Architect on IBM's bid on miniMAKS for the Danish National Survey and Cadastre, an EU-tender for new GIS and administrative system. 
 assignment_minimaks_note=
-assignment_minimaks_features=Strong focus on creating an SOA solution;Creative solution to challeging subcontracters and to matching the target maximum price.;Advising and assisting the implementation team after the assignment was won.
+assignment_minimaks_features=Strong focus on building on a Service Oriented Architecture;Creative solution to challenging subcontracters and to matching the target maximum price.;Advising and assisting the implementation team after the assignment was won.
 
 assignment_ctr_company=Danish Medicines Agency
 assignment_ctr_time=2000
@@ -66,10 +66,10 @@ experience_miracle_title=IT Architect and Senior Developer
 experience_miracle_company=Miracle
 experience_miracle_time=7/2010–6/2014
 experience_miracle_summary=Primarily Java/Java EE development on JBoss 7, but also Scala, Play 2, JBoss ESB, jBPM and other technologies.
-experience_miracle_note=Note: Miracle bought Lenio in july 2010. 
-experience_miracle_features=Worked on several smaller projects;Worked through projects end-to-end, from conception to maintenance;Active in the company Scala community and in coordinatin local Scala User Group (SUGA);Other job tasks included teaching courses, server maintenance, consulting, coaching collegues;Security cleared to "Secret" by the Danish Security and Intelligence Service in order to work on Nets' servers.      
+experience_miracle_note=Note: Miracle bought Lenio in July 2010. 
+experience_miracle_features=Worked on several smaller projects;Worked through projects end-to-end from conception to maintenance;Active in the company Scala community and in coordination local Scala User Group (SUGA);Other job tasks included teaching courses, server maintenance, consulting, coaching collegues;Security cleared to "Secret" by the Danish Security and Intelligence Service in order to work on Nets' servers.      
 
-experience_lenio_title=IT architect
+experience_lenio_title=IT Architect
 experience_lenio_company=Lenio
 experience_lenio_time=12/2006-6/2010
 experience_lenio_note=
@@ -93,7 +93,7 @@ experience_md_features=
 experience_intramed_title=Senior Developer
 experience_intramed_company=IntraMed A/S
 experience_intramed_time=4/2002-4/2003
-experience_intramed_summary=Developer on Clinical System Organiser for Anti-coagulation medicines using primarily Swing, Struts and JDO
+experience_intramed_summary=Developer on Clinical System Organiser for Anti-coagulation Medicines using primarily Swing, Struts and JDO
 experience_intramed_note=
 experience_intramed_features=   
 
@@ -133,12 +133,12 @@ experience_service_summary=Platoon radio operator in the armored infantry
 experience_service_note= 
 experience_service_features=
 
-educations=hs,hhx,datanom,pl,ibm,hoi
+educations=hoi,ibm,pl,datanom,hhx,hs
 
 education_hs_name=GCSE/High School
 education_hs_institution=Grenaa Gymnasium
 education_hs_location=
-education_hs_description=Mathematically based, with physcics, chemistry, biology and french 
+education_hs_description=Mathematically based, with physics, chemistry, biology and french 
 education_hs_time=7/1988-6/1991
 
 education_hhx_name=Higher Commercial Examination 
@@ -150,7 +150,7 @@ education_hhx_time=7/1994-6/1995
 education_datanom_name=Datanom Courses in IT
 education_datanom_institution=Aarhus Business College
 education_datanom_location=
-education_datanom_description=Data transmission, Program construction, Local Area Networks, Project Management, IT-strategy, Object Orientered Analysis and Design
+education_datanom_description=Data Transmission, Program Construction, Local Area Networks, Project Management, IT-strategy, Object Orientered Analysis and Design
 education_datanom_time=7/1996-1/2000
 
 education_pl_name=Project Management Program
@@ -159,10 +159,10 @@ education_pl_location=
 education_pl_description=One year internal project manager courses + on the job coaching 
 education_pl_time=9/2000-8/2001
 
-education_ibm_name=IBM architect courses
+education_ibm_name=IBM Architect Courses
 education_ibm_institution=IBM
 education_ibm_location=
-education_ibm_description=Architectural Thinking, Component modelling, Operational modelling
+education_ibm_description=Architectural Thinking, Component Modelling, Operational Modelling
 education_ibm_time=3/2005-11/2006
 
 education_hoi_name=History of Ideas
@@ -189,7 +189,7 @@ interest_science_name=Sciences
 interest_science_description=Big general interest in the sciences, especially in philosophy, religion, history and neurology. 
 
 interest_karate_name=Karate and Self Defense
-interest_karate_description=Practising, instructor and referee
+interest_karate_description=Practising blackbelt instructor and referee
 
 interest_arts_name=Arts
 interest_arts_description=Movies, classical music, rock and playing the guitar 
