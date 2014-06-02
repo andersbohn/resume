@@ -7,7 +7,7 @@ import play.api.i18n.Lang
 
 object Application extends Controller {
 
-  def index = Action {
+  def index = withLang { implicit request =>
     Ok(views.html.index())
   }
 
