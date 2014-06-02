@@ -6,7 +6,8 @@
 GET        /                    controllers.Application.index
 
 
-GET    /cv                     controllers.Application.cv()
+GET    /en                     controllers.Application.en()
+GET    /da                     controllers.Application.da()
 
 
 #GET     /jquery.min.map                           controllers.Assets.at(path="/public/js/",file= "jquery.min.map")

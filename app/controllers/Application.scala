@@ -11,8 +11,12 @@ object Application extends Controller {
     Ok(views.html.index())
   }
 
-  def cv = withLang { implicit request =>
-    Ok(views.html.index())
+  def en = withLang { implicit request =>
+    Ok(views.html.index()(Lang("en")))
+  }
+
+  def da = withLang { implicit request =>
+    Ok(views.html.index()(Lang("da")))
   }
 
 import play.api.Play.current;
