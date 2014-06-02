@@ -170,4 +170,5 @@
 		.skill p, #contact-form{ display:none; }
 		.contact-info-2 li{ float:none; }
 		.contact-info-2 .hide-on-phone{ display:none; }
+		.cv-item-description { text-align:right; }
 	}
