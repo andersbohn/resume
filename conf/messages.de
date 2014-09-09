@@ -1,5 +1,5 @@
-phone_label=Phone
-contact_heading=Contact
+phone_label=Mobile
+contact_heading=Kontakt
 assignments_heading=Selected Assignments
 interests_heading=Personal Interests
 language_label=Language Skills
@@ -12,37 +12,39 @@ working_experience_cont=Employments (cont.)
 references_heading=Selected References
 
 name=Anders Bohn Jespersen
-description=Software Architect
+description=Software Architekt
 profile=Versatile and strong problem solver on all levels from technical details to architectural decisions or reflections on team practices and project methods.
 
 tennant_heading=Resume
 
 tennant_current_situation_company=Situation
-tennant_current_situation_title=Looking for a nice and quiet apartment in Zürich
-tennant_current_situation_summary=I recently moved to Zürich to pursuit my carrier in software development with Leonteq Securities AG. Due to a certain time pressure and challenges of finding a proper appartment from Denmark, I am currently renting a room in Kreiz 4. I hope to be able to find a nice and quiet place, preferably within cycling-distance of Leonteq.  
+tennant_current_situation_title=Auf der Suche nach einer schönen und ruhigen Wohnung in Zürich
+tennant_current_situation_summary=Ich zog vor kurzem nach Zürich zur Verfolgung meiner Karriere in der Softwareentwicklung mit Leonteq Securities AG. Aufgrund einer gewissen Zeitdruck und Herausforderungen, eine richtige Wohnung aus Dänemark zu finden, bin ich derzeit Anmietung eines Zimmers in Kreiz 4. Ich hoffe, dass ich ein schöner und ruhiger Ort finden, vorzugsweise im Velo-Distanz von Leonteq.  
 tennant_current_situation_time=
-tennant_current_situation_note=I am ready to take over a new lease immediately, when the opportunity arises. 
+tennant_current_situation_note=Ich bin bereit, einen neuen Mietvertrag sofort zu übernehmen, wenn sich die Gelegenheit ergibt. 
 tennant_current_situation_features=
 
-tennant_about_me_company=About me
-tennant_about_me_title=Stoic, easygoing, reliable and capable 
-tennant_about_me_summary=I am 42 years old, single, fit and of good health. In Denmark I worked  as an IT Architect for Miracle, Maersk and IBM. I enjoy outdoors activities, and I am also a trained martial artist. My hobbies include philosophy, religion, history and neurology. I am from Denmark, where I grew up on the countryside, and I certainly love nature, but also enjoy the advantages of the city. I Find Zürich to be quite a gem in this respect.
-tennant_about_me_note=My german is a bit rusty, but I'm getting the hang of it and getting accustomed here very quickly
+tennant_about_me_company=Über mich
+tennant_about_me_title=Stoisch, unbeschwert, zuverlässig und in der Lage 
+tennant_about_me_summary=Ich bin 42 Jahre alt, ledig, fit, eine gute Gesundheit und solide persönlichen Finanzen. In Dänemark war ich als IT-Architekt für Miracle, Maersk und IBM. Ich geniesse Aktivitäten im Freien, und ich bin auch ein ausgebildeter Kampfsportler. Meine Hobbys sind u.a. Philosophie, Religion und Geschichte. Ich bin auf dem Land aufgewachsen, und ich habe sicherlich lieben an die Natur, sondern geniessen auch die Vorteile der Stadt. Ich finde Zurick recht ein Juwel in dieser Hinsicht sein.
+tennant_about_me_note=
+#Mein Deutsch ist ein bisschen eingerostet, aber ich bin immer den Dreh raus und bekommen hier sehr schnell gewöhnt
 tennant_about_me_features=
 tennant_about_me_time= 
+
  
 tennant_interested_company=Interessiert
-tennant_interested_title=Feel free to check my references, and contact me for any further questions you might have
-tennant_interested_summary=If you have any questions, feel free to contact me by email or phone. I also added contact information for my current landlord and for employer. I'd be happy to supply any other references, you might wish. 
-tennant_interested_note=I also include copies for your convenience of:  Declarition of No Debt, Declaration of No Prior Convictions form Denmark, Work permit, Latest payslip (Note: only two weeks of work in August),    
+tennant_interested_title=Dokumentation und Referenzen
+tennant_interested_summary=Fühlen Sie sich frei, um meine Referenzen zu überprüfen, und ich bin naturlich zur Verfügung, wenn sie weitere Fragen haben, oder mehrere Referenzen oder Dokumenten brauchen.   
+tennant_interested_note=Als Anlage sind Kopien von: Auszug aus dem Betreibungsregister, Ausländerausweis, Auszug aus dem Strafregister (Dänemarks), Neueste Gehaltsabrechnung (Hinweis: nur zwei Wochen Arbeit im August)    
 tennant_interested_features=
 tennant_interested_time=
 
-tennant_references=References
+tennant_references=Referenzen
 
-tennant_employer_company=At Employer
+tennant_employer_company=Arbeitgeber
 tennant_employer_title=Karin Süsstrunk, HR Director, Leonteq Securites AG
-tennant_employer_summary=Direct: +41 58 800 1210 - Mobile: +41 79 443 3734 - E-Mail: karin.suesstrunk@leonteq.com 
+tennant_employer_summary=Telefon: +41 58 800 1210 - Mobile: +41 79 443 3734 - Mail: karin.suesstrunk@leonteq.com 
 tennant_employer_note=www.leonteq.ch
 tennant_employer_features=
 tennant_employer_time=
@@ -50,7 +52,7 @@ tennant_employer_time=
 
 tennant_landlord_company=Landlord
 tennant_landlord_title=C. Landolt
-tennant_landlord_summary=Fixnet: 044-422 56 58 - Handy: 079-404 06 72 - E-Mail: clandolt@bluewin.ch
+tennant_landlord_summary=Telefon: +41 44 422 56 58 - Mobile: +41 79 404 06 72 - Mail: clandolt@bluewin.ch
 tennant_landlord_features=
 tennant_landlord_note=
 tennant_landlord_time=
@@ -61,7 +63,7 @@ street=Herdernstrasse 88
 city=8004  Zürich 
 country=Schweiz
 email=anders@bohnjespersen.dk
-phone=076 666 51 17
+phone=+41 76 666 51 17
 born=16th of February 1972, Grenaa, Denmark
 citizenship=Danish
 status=Single
