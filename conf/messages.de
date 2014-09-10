@@ -19,14 +19,14 @@ tennant_heading=Resume
 
 tennant_current_situation_company=Situation
 tennant_current_situation_title=Auf der Suche nach einer schönen und ruhigen Wohnung in Zürich
-tennant_current_situation_summary=Ich zog vor kurzem nach Zürich zur Verfolgung meiner Karriere in der Softwareentwicklung mit Leonteq Securities AG. Aufgrund einer gewissen Zeitdruck und Herausforderungen, eine richtige Wohnung aus Dänemark zu finden, bin ich derzeit Anmietung eines Zimmers in Kreiz 4. Ich hoffe, dass ich ein schöner und ruhiger Ort finden, vorzugsweise im Velo-Distanz von Leonteq.  
+tennant_current_situation_summary=Ich zog vor kurzem nach Zürich zur Verfolgung meiner Karriere in der Softwareentwicklung mit Leonteq Securities AG im Brandschenkstrasse. Aufgrund einer gewissen Zeitdruck und Herausforderungen, eine richtige Wohnung aus Dänemark zu finden, bin ich derzeit Anmietung eines Zimmers in Kreiz 4. Ich hoffe, dass ich ein schöner und ruhiger Ort finden, vorzugsweise im Velo-Distanz von Leonteq.  
 tennant_current_situation_time=
 tennant_current_situation_note=Ich bin bereit, einen neuen Mietvertrag sofort zu übernehmen, wenn sich die Gelegenheit ergibt. 
 tennant_current_situation_features=
 
 tennant_about_me_company=Über mich
-tennant_about_me_title=Stoisch, unbeschwert, zuverlässig und in der Lage 
-tennant_about_me_summary=Ich bin 42 Jahre alt, ledig, fit, eine gute Gesundheit und solide persönlichen Finanzen. In Dänemark war ich als IT-Architekt für Miracle, Maersk und IBM. Ich geniesse Aktivitäten im Freien, und ich bin auch ein ausgebildeter Kampfsportler. Meine Hobbys sind u.a. Philosophie, Religion und Geschichte. Ich bin auf dem Land aufgewachsen, und ich habe sicherlich lieben an die Natur, sondern geniessen auch die Vorteile der Stadt. Ich finde Zurick recht ein Juwel in dieser Hinsicht sein.
+tennant_about_me_title=Stoisch, unbeschwert, zuverlässig und sehr fähig 
+tennant_about_me_summary=Ich bin 42 Jahre alt, ledig, fit, habe eine gute Gesundheit und solide finanzielle Verhältnisse. In Dänemark arbeitete ich als IT-Architekt für Miracle, Maersk und IBM. Ich geniesse Aktivitäten im Freien, und ich bin auch ein ausgebildeter Kampfsportler. Meine Hobbys sind u.a. Philosophie, Religion und Geschichte. Ich bin auf dem Land aufgewachsen, und ich habe sicherlich lieben an die Natur, sondern geniessen auch die Vorteile der Stadt. Ich finde Zurick recht ein Juwel in dieser Hinsicht sein.
 tennant_about_me_note=
 #Mein Deutsch ist ein bisschen eingerostet, aber ich bin immer den Dreh raus und bekommen hier sehr schnell gewöhnt
 tennant_about_me_features=
@@ -35,8 +35,9 @@ tennant_about_me_time=
  
 tennant_interested_company=Interessiert
 tennant_interested_title=Dokumentation und Referenzen
-tennant_interested_summary=Fühlen Sie sich frei, um meine Referenzen zu überprüfen, und ich bin naturlich zur Verfügung, wenn sie weitere Fragen haben, oder mehrere Referenzen oder Dokumenten brauchen.   
-tennant_interested_note=Als Anlage sind Kopien von: Auszug aus dem Betreibungsregister, Ausländerausweis, Auszug aus dem Strafregister (Dänemarks), Neueste Gehaltsabrechnung (Hinweis: nur zwei Wochen Arbeit im August)    
+tennant_interested_summary=Bitte überprüfen Sie meine Referenzen, und ich bin naturlich zur Verfügung, wenn sie weitere Fragen haben, oder mehrere Referenzen oder Dokumenten brauchen.   
+tennant_interested_note=Als Anlage sind Kopien von: Auszug aus dem Betreibungsregister, Ausländerausweis, Auszug aus dem Strafregister (Dänemarks)
+#, Neueste Gehaltsabrechnung (Hinweis: nur zwei Wochen Arbeit im August)    
 tennant_interested_features=
 tennant_interested_time=
 
@@ -50,7 +51,7 @@ tennant_employer_features=
 tennant_employer_time=
 
 
-tennant_landlord_company=Landlord
+tennant_landlord_company=Aktuelle Vermieter
 tennant_landlord_title=C. Landolt
 tennant_landlord_summary=Telefon: +41 44 422 56 58 - Mobile: +41 79 404 06 72 - Mail: clandolt@bluewin.ch
 tennant_landlord_features=
