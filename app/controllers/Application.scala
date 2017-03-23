@@ -23,4 +23,12 @@ object Application extends Language {
     Ok(views.html.index()(Lang("ge")))
   }
 
+  def de = withLang { implicit request =>
+    Ok(views.html.index()(Lang("de")))
+  }
+
+  def alpinDe = withLang { implicit request =>
+    Ok(views.html.alpin()(Lang("de")))
+  }
+
 }

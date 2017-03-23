@@ -5,8 +5,7 @@
 	<div class="span6">
 
 		<h1 class="logo">
-			@Messages("name") <br />
-			<small>@Messages("description")</small>
+			@Messages("name") 
 		</h1>
 
 	</div>
@@ -87,23 +86,14 @@
 }
 
 
-@main("Formal CV") {
+@main("Alpin CV") {
 
 <div class="wrap">
 	<div class="content">
 
 		@header()
 
-		<div class="row">
-			<div class="span12">
-
-				<h2 class="cv-profile">@Messages("profile")</h2>
-
-			</div>
-		</div>
-
-        @cvItems("assignment","bm,mkplanner,etl, minimaks","assignments_heading")
-			
+        @cvItems("alpine_trip","fahnenstock, chlichaerpf, rotstock, pizzodiclaro, pizbeverin, panixerpass, altmansantis, schilthorn, gulmen ","alpine_trips_section_title")
 			
 	</div>
 
@@ -113,52 +103,47 @@
 	<div class="content">
 
 		@header("hide-on-phone")
-		
-		@cvItems("experience", "leonteq, miracle, lenio, ibm, md, intramed, lec, dt","working_experience")
-
-	</div>
-
-</div>
-
-<div class="wrap">
-	<div class="content">
-
-		@header("hide-on-phone")
-
-		@cvItems("experience","silvan, un, service","working_experience_cont")
 
 		<div class="row">
 			<div class="span3">&nbsp;</div>
 			<div class="span9">
-
-				<h3 class="cv-section-title">@Messages("education_section_title")</h3>
-
+				<h3 class="cv-section-title">@Messages("alpine_course_section_title")</h3>
 			</div>
 		</div>
 
-		@for(education <- listFrom("educations")) {
+		@for(alpine_course <- listFrom("alpine_course")) {
 
 		<div class="row cv-item">
 			<div class="span3 cv-item-description">
 
-				<h6>@Messages("education_"+education+"_institution")</h6>
+				<h6>@Messages("alpine_course_"+alpine_course+"_institution")</h6>
 				<p>
-					@Messages("education_"+education+"_location") <span class="mute">@Messages("education_"+education+"_time")</span>
+					@Messages("alpine_course_"+alpine_course+"_location") <span class="mute">@Messages("alpine_course_"+alpine_course+"_time")</span>
 				</p>
 
 			</div>
 
 			<div class="span9 cv-item-details">
 
-				<h4>@Messages("education_"+education+"_name")</h4>
+				<h4>@Messages("alpine_course_"+alpine_course+"_name")</h4>
 
-				<p class="last">@Messages("education_"+education+"_description").</p>
+				<p class="last">@Messages("alpine_course_"+alpine_course+"_description").</p>
 
 			</div>
 
 		</div>
 		}
 		
+		<!-- div class="row">
+			<div class="span3">&nbsp;</div>
+			<div class="span9">
+				<h3 class="cv-section-title">@Messages("alpine_others_courses_section_title")</h3>
+			</div>
+		</div-->
+
+		<!--   @cvItems("experience","un, service", "")-->
+
+
 
 
 	</div>
@@ -227,6 +212,7 @@
 				<ul class="unstyled last">
 				    <li>@Messages("ref_webcv") <a href="http://cv.andersbohn.dk/@{l.language}">http://cv.andersbohn.dk/@{l.language}</a></li>
 					<li>@Messages("ref_linkedin") <a href="http://dk.linkedin.com/in/andersbohn">http://dk.linkedin.com/in/andersbohn</a></li>
+				
 				</ul>
 
 			</div>

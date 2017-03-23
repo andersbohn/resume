@@ -133,6 +133,8 @@ experience_service_summary=Menig signalmand i Panserinfanteriet
 experience_service_note= 
 experience_service_features=
 
+education_section_title=Uddannelse
+
 educations=hs,hhx,datanom,pl,ibm,hoi
 
 education_hs_name=Studentereksamen

@@ -60,14 +60,9 @@ tennant_landlord_time=
 
 
 
-street=Herdernstrasse 88 
-city=8004  Zürich 
-country=Schweiz
-email=anders@bohnjespersen.dk
-phone=+41 76 666 51 17
-born=16th of February 1972, Grenaa, Denmark
-citizenship=Danish
-status=Single
+born=16. Februar 1972, Grenaa, Dänemark
+citizenship=Dänisch
+status=Ledig
 
 ref_webcv=Web edition of CV:
 ref_linkedin=Linked-in public page:
@@ -226,7 +221,7 @@ language_two_name=English
 language_two_level=Fluent
 
 language_three_name=German
-language_three_level=Basic
+language_three_level=B2
 
 
 interests=science,karate,arts,mountains,poker
@@ -246,4 +241,103 @@ interest_mountains_description=Hiking vacations in the summer and skiing in the 
 interest_poker_name=Poker
 interest_poker_description=Great teacher of math, game theory, psychology, emotions, body language, nerve, variance, strategy, and just plain excitement and entertainment.     
 
+alpine_others_courses_section_title=Andere Kurse
+
+alpine_course_section_title=Alpinkurse
+
+alpine_course=tieffort, bsi1, lawinetag, tiefanf
+
+alpine_course_lawinetag_institution=Ruedi Bergsport
+alpine_course_lawinetag_time=2015-2-15
+alpine_course_lawinetag_name=Lawinetag
+alpine_course_lawinetag_description=Praxis im Gelände mit Urs Odermatt - auch Übungen mit LVS 
+alpine_course_lawinetag_location=Hoch Ybrig, Weglosen
+
+alpine_course_tieffort_institution=SAC-UTO
+alpine_course_tieffort_time=2016-1-30 - 2016-1-31
+alpine_course_tieffort_name=Tiefschneekurs, fortgeschrittene
+alpine_course_tieffort_description=Gruppenleiterin Trix Ammann
+alpine_course_tieffort_location=Davos, Rinerhorn
+
+alpine_course_bsi1_institution=Die Dänische Skischule
+alpine_course_bsi1_time=6 Kurswochen, 2013-2015
+alpine_course_bsi1_name=Basic Ski Instructor 
+alpine_course_bsi1_description=Prüfung bestanden am 17. Oktober 2015
+alpine_course_bsi1_location=Hintertux Gletcher, Österreich
+
+alpine_course_tiefanf_institution=SAC-UTO
+alpine_course_tiefanf_time=2015-1-17 - 2015-1-18
+alpine_course_tiefanf_name=Tiefschneekurs für Anfänger
+alpine_course_tiefanf_description=Gruppenleiter Michael Schenkel 
+alpine_course_tiefanf_location=Davos, Rinerhorn
+
+
+
+
+alpine_trips_section_title=Touren 
+
+alpine_trip_fahnenstock_company=SAC-UTO
+alpine_trip_fahnenstock_time=2016-1-23
+alpine_trip_fahnenstock_title=Fahnenstock 2235m - Skitour - +/-1.300m
+alpine_trip_fahnenstock_summary=TL Joachim Loebb, 8 Teilnehmer
+alpine_trip_fahnenstock_note=Note: Ersatztour für Ortstock (wegen Konditionen nicht möglich)
+alpine_trip_fahnenstock_features=
+
+
+alpine_trip_chlichaerpf_company=SAC-UTO
+alpine_trip_chlichaerpf_time=2016-1-9
+alpine_trip_chlichaerpf_title=Chli Chärpf, Skitour - +/- 900 m 
+alpine_trip_chlichaerpf_summary=TL Joachim Loebb, 2 Teilnehmer
+alpine_trip_chlichaerpf_note=Note: Ersatztour für Gauschla (wegen Konditionen nicht möglich), muste wegen dem Wetter nach 900 m Aufstieg umkehren.
+alpine_trip_chlichaerpf_features=
+
+
+alpine_trip_rotstock_company=SAC-UTO
+alpine_trip_rotstock_time=2015-10-31
+alpine_trip_rotstock_title=Engelberger Rotstock 2.818m - T4 Wandern
+alpine_trip_rotstock_summary=TL Urs Geisler
+alpine_trip_rotstock_note=
+alpine_trip_rotstock_features=
+
+alpine_trip_pizzodiclaro_company=SAC-UTO
+alpine_trip_pizzodiclaro_time=2015-10-24 - 2015-10-25
+alpine_trip_pizzodiclaro_title=Pizzo di Claro 2.727m - T4 Wandern
+alpine_trip_pizzodiclaro_summary=TL Daniel Heierli
+alpine_trip_pizzodiclaro_note=
+alpine_trip_pizzodiclaro_features=
+
+alpine_trip_pizbeverin_company=SAC-UTO
+alpine_trip_pizbeverin_time=2015-8-29 - 2015-8-30
+alpine_trip_pizbeverin_title=Piz Beverin 2.998 m - Carnusapass 2.602 m - T3  Wandern   
+alpine_trip_pizbeverin_summary=TL Bernadette Bisculm
+alpine_trip_pizbeverin_note=
+alpine_trip_pizbeverin_features=
+
+alpine_trip_panixerpass_company=SAC-UTO
+alpine_trip_panixerpass_time=2015-8-9
+alpine_trip_panixerpass_title=Panixerpass - T3
+alpine_trip_panixerpass_summary=TL Gabriela Sievi
+alpine_trip_panixerpass_note=
+alpine_trip_panixerpass_features=
+
+alpine_trip_altmansantis_company=SAC-UTO
+alpine_trip_altmansantis_time=2015-8-8
+alpine_trip_altmansantis_title=Altmann - Säntis 2.502 m - T4 Wandern  
+alpine_trip_altmansantis_summary=TL Manfred Hunziker
+alpine_trip_altmansantis_note=Für Aufsteiger
+alpine_trip_altmansantis_features=
+
+alpine_trip_schilthorn_company=SAC-UTO
+alpine_trip_schilthorn_time=2015-7-1
+alpine_trip_schilthorn_title=Schilthorn 2.970 m - T3 Wandern - 2000m+, 0m- 
+alpine_trip_schilthorn_summary=TL Manfred Hunziker
+alpine_trip_schilthorn_note=Für Aufsteiger
+alpine_trip_schilthorn_features=
+
+alpine_trip_gulmen_company=SAC-UTO
+alpine_trip_gulmen_time=2015-3-7
+alpine_trip_gulmen_title=Gulmen 1.789m - Skitour - 800m+, 1.000m- 
+alpine_trip_gulmen_summary=TL Christophe Emery
+alpine_trip_gulmen_note=
+alpine_trip_gulmen_features=
 

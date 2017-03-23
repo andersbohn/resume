@@ -8,8 +8,10 @@ GET        /                    controllers.Application.index
 
 GET    /en                     controllers.Application.en()
 GET    /da                     controllers.Application.da()
+GET    /de                     controllers.Application.de()
+GET    /alpin/de                     controllers.Application.alpinDe()
 
-GET    /resume/de                     controllers.Resume.de()
+#German Mieter CV - not online! : GET    /resume/de                     controllers.Resume.de()
 
 #GET     /jquery.min.map                           controllers.Assets.at(path="/public/js/",file= "jquery.min.map")
 
