@@ -6,6 +6,7 @@ language_label=Sprog
 personal_heading=Personlig information
 born_label=Født
 citizenship_label=Statsborgerskab
+languages_label=Sprog
 status_label=Civil status
 working_experience=Ansættelser
 working_experience_cont=Ansættelser (fortsat)
@@ -15,13 +16,14 @@ name=Anders Bohn Jespersen
 description=Software Arkitekt
 profile=Alsidig og stærk problemløser på alle niveauer, fra tekniske detaljer til arkitekturbeslutninger eller teampraksis og projektmetoder.
 working_experience=Erfaring
-city=8200  Aarhus N 
-country=Danmark
+city=8047 Zürich
+country=Schweiz
 
 
 born=16. februar 1972, Grenaa, Denmark
 citizenship=Dansk
 status=Single
+languages=Dansk, Engelsk, Tysk
 
 ref_webcv=Webudgave af CV:
 ref_linkedin=LinkedIn-side:

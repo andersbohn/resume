@@ -7,6 +7,7 @@ personal_heading=Personal Information
 born_label=Born
 citizenship_label=Citizenship
 status_label=Civilian status
+languages_label=Languages
 working_experience=Employments
 working_experience_cont=Employments (cont.)
 references_heading=Selected References
@@ -65,6 +66,7 @@ phone=+41 76 666 51 17
 born=16th of February 1972, Grenaa, Denmark
 citizenship=Danish
 status=Single
+languages=Native Danish, fluent English, solid German
 
 ref_webcv=Web edition of CV:
 ref_linkedin=Linked-in public page:
@@ -255,7 +257,7 @@ interest_arts_name=Arts
 interest_arts_description=Movies, classical and rock music, and classical literature 
 
 interest_mountains_name=Mountains
-interest_mountains_description=Sport and rock climbing, hiking, hoch touren in the summer and skiing in the winter. Tourenleiteraspirant in the Swiss Alpine Club. 
+interest_mountains_description=Sport and rock climbing, hiking, mountaineering in the summer and skiing in the winter. Skitourenleiter in the Swiss Alpine Club.
 
 interest_poker_name=Poker
 interest_poker_description=Great teacher of math, game theory, psychology, emotions, body language, nerve, variance, strategy, and just plain excitement and entertainment.     
