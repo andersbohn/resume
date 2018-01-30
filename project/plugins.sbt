@@ -1,10 +1,1 @@
-// Comment to get more information during initialization
-logLevel := Level.Warn
-
-// The Typesafe repository 
-resolvers ++= Seq("Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/",
- "sbt-plugins-repo" at "http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases")
-  
-
-// Use the Play sbt plugin for Play projects
-addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.2.0")
+addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.6.11")

@@ -1,19 +1,19 @@
-@()(implicit l: Lang)
- 
+@()(implicit l: Lang, messagesApi: MessagesApi)
+
 @header(extraDivClass:String="") = {
 <div class="row @extraDivClass">
 	<div class="span6">
 
 		<h1 class="logo">
-			@Messages("name") 
+			@messagesApi("name")
 		</h1>
 
 	</div>
 	<div class="span3">
 
 		<ul class="contact-info hide-on-phone fixed">
-			<li>Mail:&nbsp;<a href="mailto:#">@Messages("email")</a></li>
-			<li>@Messages("phone_label"): <strong>@Messages("phone")</strong></li>
+			<li>Mail:&nbsp;<a href="mailto:#">@messagesApi("email")</a></li>
+			<li>@messagesApi("phone_label"): <strong>@messagesApi("phone")</strong></li>
 		</ul>
 
 	</div>
@@ -31,7 +31,7 @@
 } 
 
 @listFrom(messageKey: String) = @{
-  Messages(messageKey).split(',').map(_.trim).filter(!_.isEmpty).toList 
+  messagesApi(messageKey).split(',').map(_.trim).filter(!_.isEmpty).toList
 }
 
 @cvItems(prefix:String, list:String, headerKey:String)= {
@@ -39,7 +39,7 @@
 			<div class="span3">&nbsp;</div>
 			<div class="span9">
 
-				<h3 class="cv-section-title">@Messages(headerKey)</h3>
+				<h3 class="cv-section-title">@messagesApi(headerKey)</h3>
 
 			</div>
 		</div>
@@ -49,28 +49,28 @@
 		<div class="row cv-item">
 			<div class="span3 cv-item-description">
 
-				<h6>@Messages(s"${prefix}_${experience}_company")</h6>
+				<h6>@messagesApi(s"${prefix}_${experience}_company")</h6>
 				<p>
-					<span class="mute">@Messages(s"${prefix}_${experience}_time")</span>
+					<span class="mute">@messagesApi(s"${prefix}_${experience}_time")</span>
 				</p>
 
 			</div>
 
 			<div class="span9 cv-item-details">
-				<h4>@Messages(s"${prefix}_${experience}_title")</h4>
+				<h4>@messagesApi(s"${prefix}_${experience}_title")</h4>
 
 				<p>
-					@Messages(s"${prefix}_${experience}_summary")
+					@messagesApi(s"${prefix}_${experience}_summary")
 
   
-					@defining(Messages(s"${prefix}_${experience}_note")) { note =>
+					@defining(messagesApi(s"${prefix}_${experience}_note")) { note =>
 					@if(!note.isEmpty){<br />
 					<span class="note">@note</span>
 					} 
 					}
 				</p>
 
-				@defining(Messages(s"${prefix}_${experience}_features").split(";").filter(!_.isEmpty)) { features => 
+				@defining(messagesApi(s"${prefix}_${experience}_features").split(";").filter(!_.isEmpty)) { features =>
 				  @if(!features.isEmpty){
 				    <ul class="disc last">
 					  @for(feature <- features) {
@@ -107,7 +107,7 @@
 		<div class="row">
 			<div class="span3">&nbsp;</div>
 			<div class="span9">
-				<h3 class="cv-section-title">@Messages("alpine_course_section_title")</h3>
+				<h3 class="cv-section-title">@messagesApi("alpine_course_section_title")</h3>
 			</div>
 		</div>
 
@@ -116,18 +116,18 @@
 		<div class="row cv-item">
 			<div class="span3 cv-item-description">
 
-				<h6>@Messages("alpine_course_"+alpine_course+"_institution")</h6>
+				<h6>@messagesApi("alpine_course_"+alpine_course+"_institution")</h6>
 				<p>
-					@Messages("alpine_course_"+alpine_course+"_location") <span class="mute">@Messages("alpine_course_"+alpine_course+"_time")</span>
+					@messagesApi("alpine_course_"+alpine_course+"_location") <span class="mute">@messagesApi("alpine_course_"+alpine_course+"_time")</span>
 				</p>
 
 			</div>
 
 			<div class="span9 cv-item-details">
 
-				<h4>@Messages("alpine_course_"+alpine_course+"_name")</h4>
+				<h4>@messagesApi("alpine_course_"+alpine_course+"_name")</h4>
 
-				<p class="last">@Messages("alpine_course_"+alpine_course+"_description").</p>
+				<p class="last">@messagesApi("alpine_course_"+alpine_course+"_description").</p>
 
 			</div>
 
@@ -137,7 +137,7 @@
 		<!-- div class="row">
 			<div class="span3">&nbsp;</div>
 			<div class="span9">
-				<h3 class="cv-section-title">@Messages("alpine_others_courses_section_title")</h3>
+				<h3 class="cv-section-title">@messagesApi("alpine_others_courses_section_title")</h3>
 			</div>
 		</div-->
 
@@ -157,7 +157,7 @@
 		<div class="row">
 			<div class="span3">&nbsp;</div>
 			<div class="span9">
-				<h3 class="cv-section-title">@Messages("personal_heading")</h3>
+				<h3 class="cv-section-title">@messagesApi("personal_heading")</h3>
 			</div>
 		</div>
 
@@ -166,12 +166,12 @@
 			<div class="span9 cv-item-details">
 
 				<ul class="unstyled last">
-					<li><strong>@Messages("born_label")</strong><br />
-					@Messages("born")</li>
-					<li><strong>@Messages("citizenship_label")</strong><br />
-					@Messages("citizenship")</li>
-					<li><strong>@Messages("status_label")</strong><br />
-					@Messages("status")</li>
+					<li><strong>@messagesApi("born_label")</strong><br />
+					@messagesApi("born")</li>
+					<li><strong>@messagesApi("citizenship_label")</strong><br />
+					@messagesApi("citizenship")</li>
+					<li><strong>@messagesApi("status_label")</strong><br />
+					@messagesApi("status")</li>
 				</ul>
 
 			</div>
@@ -181,7 +181,7 @@
 		<div class="row">
 			<div class="span3">&nbsp;</div>
 			<div class="span9">
-				<h3 class="cv-section-title">@Messages("interests_heading")</h3>
+				<h3 class="cv-section-title">@messagesApi("interests_heading")</h3>
 			</div>
 		</div>
 
@@ -191,7 +191,7 @@
 
 				<ul class="unstyled last">
 					@for(interest <- listFrom("interests")) {
-					<li><strong>@Messages("interest_"+interest+"_name")</strong><br />@Messages("interest_"+interest+"_description")</li>
+					<li><strong>@messagesApi("interest_"+interest+"_name")</strong><br />@messagesApi("interest_"+interest+"_description")</li>
 					}
 				</ul>
 
@@ -201,7 +201,7 @@
 		<div class="row">
 			<div class="span3">&nbsp;</div>
 			<div class="span9">
-				<h3 class="cv-section-title">@Messages("references_heading")</h3>
+				<h3 class="cv-section-title">@messagesApi("references_heading")</h3>
 			</div>
 		</div>
 
@@ -210,8 +210,8 @@
 			<div class="span9 cv-item-details">
 
 				<ul class="unstyled last">
-				    <li>@Messages("ref_webcv") <a href="http://cv.andersbohn.dk/@{l.language}">http://cv.andersbohn.dk/@{l.language}</a></li>
-					<li>@Messages("ref_linkedin") <a href="http://dk.linkedin.com/in/andersbohn">http://dk.linkedin.com/in/andersbohn</a></li>
+				    <li>@messagesApi("ref_webcv") <a href="http://cv.andersbohn.dk/@{l.language}">http://cv.andersbohn.dk/@{l.language}</a></li>
+					<li>@messagesApi("ref_linkedin") <a href="http://dk.linkedin.com/in/andersbohn">http://dk.linkedin.com/in/andersbohn</a></li>
 				
 				</ul>
 
@@ -224,7 +224,7 @@
 			<div class="span3">&nbsp;</div>
 			<div class="span9">
 
-				<h3 class="cv-section-title">@Messages("contact_heading")</h3>
+				<h3 class="cv-section-title">@messagesApi("contact_heading")</h3>
 
 			</div>
 		</div>
@@ -232,9 +232,9 @@
 		<div class="row cv-item" style="margin-bottom: 0;">
 			<div class="span3 cv-item-description">
 
-				<h6>@Messages("name")</h6>
+				<h6>@messagesApi("name")</h6>
 				<address class="text-right hide-on-phone">
-					@Messages("street") <br />@Messages("city") <br />@Messages("country")
+					@messagesApi("street") <br />@messagesApi("city") <br />@messagesApi("country")
 				</address>
 
 			</div>
@@ -242,9 +242,9 @@
 			<div class="span9 cv-item-details">
 
 				<ul class="contact-info-2 fixed">
-					<li><i class="icon icon-inbox"></i> <a href="mailto:#">@Messages("email")</a></li>
+					<li><i class="icon icon-inbox"></i> <a href="mailto:#">@messagesApi("email")</a></li>
 					<li><span class="mute hide-on-phone">&#215;</span></li>
-					<li><i class="icon icon-bullhorn"></i>@Messages("phone")</li>
+					<li><i class="icon icon-bullhorn"></i>@messagesApi("phone")</li>
 				</ul>
 
 				<p class="credits no-print">
@@ -256,4 +256,4 @@
 	</div>
 </div>
 
-}(l)
+}(l,messagesApi)

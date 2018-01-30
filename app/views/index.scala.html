@@ -1,5 +1,5 @@
-@()(implicit l: Lang)
- 
+@()(implicit l: Lang, Messages: MessagesApi)
+
 @header(extraDivClass:String="") = {
 <div class="row @extraDivClass">
 	<div class="span6">
@@ -272,4 +272,4 @@
 	</div>
 </div>
 
-}(l)
+}(l,Messages)

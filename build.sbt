@@ -1,17 +1,15 @@
-//import com.typesafe.startscript.StartScriptPlugin
-
-//seq(StartScriptPlugin.startScriptForClassesSettings: _*)
-
-scalaVersion := "2.10.2"
-
 name := "resume"
 
 version := "1.0-SNAPSHOT"
 
-libraryDependencies ++= Seq(
-  jdbc,
-  anorm,
-  cache
-)     
+lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-play.Project.playScalaSettings
+scalaVersion := "2.12.4"
+
+libraryDependencies ++= Seq(guice,specs2)
+
+// Adds additional packages into Twirl
+//TwirlKeys.templateImports += "com.example.controllers._"
+
+// Adds additional packages into conf/routes
+// play.sbt.routes.RoutesKeys.routesImport += "com.example.binders._"
