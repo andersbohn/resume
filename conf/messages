@@ -77,9 +77,9 @@ ref_miracle=Previous employer, Miracle A/S
 assignment_teralytics_company=Teralytics
 assignment_teralytics_title=Software Engineer on Mobility Analytics Platform
 assignment_teralytics_time=2018-
-assignment_teralytics_summary=Crossfield work on particularly Apache Spark and Apache Airflow, working in both Scala and Python, as well as Docker, Kustomize, Ansible and many more.
+assignment_teralytics_summary=Analytics Platform team on Apache Spark, Apache Airflow, both Scala and Python, running with Docker, K8s, Kustomize, Ansible and much more.
 assignment_teralytics_note=
-assignment_teralytics_features=Focus switch onto very big data;Using Spark on Mesos, Python Pandas and much more.;Support the ML and data-scientists.;Including learning about Hadoop and other new big data storage platforms.;Designed a cutting edge Microlith using ZIO to serve data from object storage to a Clickhouse cluster.
+assignment_teralytics_features=Focus switch onto very big data;Using Spark on Mesos, Python Pandas, Jupyter, ...;Support the ML- and data-scientists;Including learning about Hadoop and other new big data storage platforms.;Designed a cutting edge Microlith using ZIO to serve data from object storage to a Clickhouse cluster.
 
 assignment_bm_company=Leonteq
 assignment_bm_title=Scala Developer on Market Price Monitoring System
@@ -124,9 +124,9 @@ assignment_ctr_features=XML-integration with 300+ pharmacies throughout Denmark.
 experience_teralytics_title=Software Engineer
 experience_teralytics_company=Teralytics AG
 experience_teralytics_time=9/2018–
-experience_teralytics_summary=Scala, Akka, Akka Http Server, Play, also Rabbit MQ, Elasticsearch, Angular and NG2.
+experience_teralytics_summary=Scala, Spark, Airflow, Python, ZIO, Doobie, Clickhouse
 experience_teralytics_note=
-experience_teralytics_features=Primary developer on a greenfield internal tool; Worked on several other projects, including contributing to the company wide platform.
+experience_teralytics_features=Big mobility data analytics platform developer on assorted clouds.
 
 experience_leonteq_title=Software Developer
 experience_leonteq_company=Leonteq Securities AG
@@ -271,9 +271,9 @@ interest_arts_name=Arts
 interest_arts_description=Movies, classical and rock music, and classical literature 
 
 interest_mountains_name=Mountaineer
-interest_mountains_description=Sport and rock climbing, hiking, mountaineering in the summer and skiing in the winter. Certified as Basic Ski Instructor from the Danish Ski School. Also Skitourenleiter in the Swiss Alpine Club.
+interest_mountains_description=Sport and rock climbing, hiking, mountaineering in the summer and skiing in the winter. Certified as Basic Ski Instructor from the Danish Ski School. Certified Skitourenleiter in the Swiss Alpine Club.
 
-interest_poker_name=Poker/Games
+interest_poker_name=Poker...Chess
 interest_poker_description=Poker taught me a lot of math, game theory, psychology, emotions, body language, nerve, variance, strategy, and just plain excitement and entertainment.
 
 
