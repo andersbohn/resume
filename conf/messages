@@ -103,7 +103,8 @@ assignment_etl_time=2007-2009
 assignment_etl_title=IT Architect on Land Registration System
 assignment_etl_summary=Lead Architect/Core Architect on eTL for the Courts of Denmark, the Land Registration Court. Complete move to electronic registration of deeds, mortgages and easements on all real estate in Denmark.  
 assignment_etl_note=Note: Hired in from Lenio by contract owner, CSC, as Lead Architect. 
-assignment_etl_features=Core participator on the domain modelling for complex rural real estate deeds.;Negotiations on design of corresponding message formats and digitial signatures;Inventor, designer and implementor for template based, pre-approved registrations. 
+assignment_etl_features=Core participator on the domain modelling for complex rural real estate deeds.;Designer and implementor for template based, pre-approved registrations.
+old_assignment_etl_features=Core participator on the domain modelling for complex rural real estate deeds.;Negotiations on design of corresponding message formats and digitial signatures;Inventor, designer and implementor for template based, pre-approved registrations.
 
 assignment_minimaks_company=Danish National Survey and Cadastre
 assignment_minimaks_time=2004
@@ -179,10 +180,17 @@ experience_lec_summary=Proposals, sizing, estimating, performance tuning and tea
 experience_lec_note=
 experience_lec_features=   
 
+experience_silvandt_title=IT Consultant
+experience_silvandt_company=Silvan, Danske Traelast
+experience_silvandt_time=1995-1997
+experience_silvandt_summary=PC Server administration, Office and Retail store PC support and maintenance
+experience_silvandt_note=Danske Traelast owned Silvan and was later bought by Wolseley (and named "DT Group")
+experience_silvandt_features=
+
 experience_dt_title=PC Supporter
 experience_dt_company=Danske Traelast
 experience_dt_time=1996-1997
-experience_dt_summary=PC Server administration, Office and Retail store PC support and maintenance 
+experience_dt_summary=PC Server administration, Office and Retail store PC support and maintenance
 experience_dt_note=Danske Traelast who owns Silvan was later bought by Wolseley, and is now called "DT Group"
 experience_dt_features=
 
