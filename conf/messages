@@ -58,8 +58,8 @@ tennant_landlord_time=
 
 
 
-street=Langgrütstrasse 103 
-city=8047  Zürich 
+street=Badenerstrasse 76C
+city=8952  Schlieren
 country=Schweiz
 email=anders@bohnjespersen.dk
 phone=+41 76 666 51 17
@@ -74,12 +74,19 @@ ref_suga=Scala User Group Aarhus on Meetup
 ref_miracle=Previous employer, Miracle A/S
 
 
-assignment_bm_company=Leonteq 
+assignment_teralytics_company=Teralytics
+assignment_teralytics_title=Software Engineer on Mobility Analytics Platform
+assignment_teralytics_time=2018-
+assignment_teralytics_summary=Crossfield work on particularly Apache Spark and Apache Airflow, working in both Scala and Python, as well as Docker, Kustomize, Ansible and many more.
+assignment_teralytics_note=
+assignment_teralytics_features=Focus switch onto very big data;Using Spark on Mesos, Python Pandas and much more.;Support the ML and data-scientists.;Including learning about Hadoop and other new big data storage platforms.;Designed a cutting edge Microlith using ZIO to serve data from object storage to a Clickhouse cluster.
+
+assignment_bm_company=Leonteq
 assignment_bm_title=Scala Developer on Market Price Monitoring System
-assignment_bm_time=2014-
-assignment_bm_summary=Primary Scala Developer on greenfield spot price monitoring system.       
-assignment_bm_note= 
-assignment_bm_features=Built 24x7 spot price monitoring service from the ground up with on Akka. Use of ScalaZ, Oracle backend and several integrations with existing systems;Full UI built with Play, HTML5 and JQuery;In production 12 months+;End of 2016, a complete rewrite to run on a new Elasticsearch index, use Rest services on Akka Http Server for a brand new GUI built with Angular 2 and Typescript (also in production).   
+assignment_bm_time=2014-2018
+assignment_bm_summary=Primary Scala Developer on greenfield spot price monitoring system.
+assignment_bm_note=
+assignment_bm_features=Built 24x7 spot price monitoring service from the ground up with on Akka. Use of ScalaZ, Oracle backend and several integrations with existing systems;Full UI built with Play, HTML5 and JQuery;In production 12 months+;End of 2016, a complete rewrite to run on a new Elasticsearch index, use Rest services on Akka Http Server for a brand new GUI built with Angular 2 and Typescript (also in production).
 
 
 assignment_mkplanner_company=Markedskraft
@@ -114,12 +121,19 @@ assignment_ctr_features=XML-integration with 300+ pharmacies throughout Denmark.
 
 
 
+experience_teralytics_title=Software Engineer
+experience_teralytics_company=Teralytics AG
+experience_teralytics_time=9/2018–
+experience_teralytics_summary=Scala, Akka, Akka Http Server, Play, also Rabbit MQ, Elasticsearch, Angular and NG2.
+experience_teralytics_note=
+experience_teralytics_features=Primary developer on a greenfield internal tool; Worked on several other projects, including contributing to the company wide platform.
+
 experience_leonteq_title=Software Developer
 experience_leonteq_company=Leonteq Securities AG
-experience_leonteq_time=8/2014–
+experience_leonteq_time=8/2014–8/2018
 experience_leonteq_summary=Scala, Akka, Akka Http Server, Play, also Rabbit MQ, Elasticsearch, Angular and NG2.
-experience_leonteq_note= 
-experience_leonteq_features=Primary developer on a greenfield internal tool; Worked on several other projects, including contributing to the company wide platform.         
+experience_leonteq_note=
+experience_leonteq_features=Primary developer on a greenfield internal tool; Worked on several other projects, including contributing to the company wide platform.
 
 
 experience_miracle_title=IT Architect and Senior Developer
@@ -242,24 +256,24 @@ language_two_name=English
 language_two_level=Fluent
 
 language_three_name=German
-language_three_level=B2
+language_three_level=B2+
 
 
 interests=science,karate,arts,mountains,poker
 
 interest_science_name=Sciences
-interest_science_description=Big general interest in the sciences, especially in philosophy, religion, history and neurology. 
+interest_science_description=Big general interest in the sciences, especially in philosophy, religion, history and neurology
 
-interest_karate_name=Karate and Self Defense
-interest_karate_description=Practising blackbelt instructor and referee
+interest_karate_name=Martial arts
+interest_karate_description=Karate blackbelt, instructor and referee, also teaching generic self defense, but switched to Brazilian Jiu-Jitsu in Switzerland
 
 interest_arts_name=Arts
 interest_arts_description=Movies, classical and rock music, and classical literature 
 
-interest_mountains_name=Mountains
-interest_mountains_description=Sport and rock climbing, hiking, mountaineering in the summer and skiing in the winter. Skitourenleiter in the Swiss Alpine Club.
+interest_mountains_name=Mountaineer
+interest_mountains_description=Sport and rock climbing, hiking, mountaineering in the summer and skiing in the winter. Certified as Basic Ski Instructor from the Danish Ski School. Also Skitourenleiter in the Swiss Alpine Club.
 
-interest_poker_name=Poker
-interest_poker_description=Great teacher of math, game theory, psychology, emotions, body language, nerve, variance, strategy, and just plain excitement and entertainment.     
+interest_poker_name=Poker/Games
+interest_poker_description=Poker taught me a lot of math, game theory, psychology, emotions, body language, nerve, variance, strategy, and just plain excitement and entertainment.
 
 
