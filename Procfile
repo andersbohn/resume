@@ -1,1 +1,0 @@
-web: target/universal/stage/bin/resume -Dhttp.port=${PORT}
