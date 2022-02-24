@@ -79,7 +79,7 @@ assignment_teralytics_title=Software Engineer on Mobility Analytics Platform
 assignment_teralytics_time=2018-
 assignment_teralytics_summary=Analytics Platform team on Apache Spark, Apache Airflow, both Scala and Python, running with Docker, K8s, Kustomize, Ansible and much more.
 assignment_teralytics_note=
-assignment_teralytics_features=Focus switch onto very big data;Using Spark on Mesos, Python Pandas, Jupyter, ...;Support the ML- and data-scientists;Including learning about Hadoop and other new big data storage platforms.;Designed a cutting edge Microlith using ZIO to serve data from object storage to a Clickhouse cluster.
+assignment_teralytics_features=Focus switch onto very big data;Using Spark on Mesos, Python Pandas, Jupyter, ...;Including learning about Hadoop and other new big data storage platforms.;Designed a cutting edge Microlith using ZIO to serve data from object storage to a Clickhouse cluster.
 
 assignment_bm_company=Leonteq
 assignment_bm_title=Scala Developer on Market Price Monitoring System
@@ -273,7 +273,7 @@ interest_science_name=Sciences
 interest_science_description=Big general interest in the sciences, especially in philosophy, religion, history and neurology
 
 interest_karate_name=Martial arts
-interest_karate_description=Karate blackbelt, instructor and referee, also teaching generic self defense, but switched to Brazilian Jiu-Jitsu in Switzerland
+interest_karate_description=Karate black-belt, instructor and referee. Brazilian Jiu-Jitsu in Switzerland
 
 interest_arts_name=Arts
 interest_arts_description=Movies, classical and rock music, and classical literature 
@@ -281,7 +281,7 @@ interest_arts_description=Movies, classical and rock music, and classical litera
 interest_mountains_name=Mountaineer
 interest_mountains_description=Sport and rock climbing, hiking, mountaineering in the summer and skiing in the winter. Certified as Basic Ski Instructor from the Danish Ski School. Certified Skitourenleiter in the Swiss Alpine Club.
 
-interest_poker_name=Poker...Chess
+interest_poker_name=Poker
 interest_poker_description=Poker taught me a lot of math, game theory, psychology, emotions, body language, nerve, variance, strategy, and just plain excitement and entertainment.
 
 
