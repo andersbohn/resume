@@ -1,17 +1,31 @@
-name := "resume"
+name         := "resume"
 organization := "dk.andersbohn"
 
-version := "1.0-SNAPSHOT"
+version := "2.0-SNAPSHOT"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
-
-//scalaVersion := "2.12.14"
 scalaVersion := "2.13.6"
 
-libraryDependencies ++= Seq(guice,specs2)
+testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
 
-// Adds additional packages into Twirl
-//TwirlKeys.templateImports += "com.example.controllers._"
+import Dependencies.Version
 
-// Adds additional packages into conf/routes
-// play.sbt.routes.RoutesKeys.routesImport += "com.example.binders._"
+scalacOptions ++= Seq("-Xfatal-warnings")
+
+libraryDependencies ++= Seq(
+  "dev.zio" %% "zio"                 % Version.zio,
+  "dev.zio" %% "zio-test"            % Version.zio % Test,
+  "dev.zio" %% "zio-test-sbt"        % Version.zio % Test,
+  "dev.zio" %% "zio-json"            % Version.zioJson,
+  "dev.zio" %% "zio-http"            % Version.zioHttp,
+  "dev.zio" %% "zio-config"          % Version.zioConfig,
+  "dev.zio" %% "zio-config-typesafe" % Version.zioConfig,
+  "dev.zio" %% "zio-config-magnolia" % Version.zioConfig
+)
+scalacOptions ++= Seq("-Ymacro-annotations", "-Xfatal-warnings", "-deprecation")
+scalaVersion := "2.13.6"
+testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
+
+lazy val root = (project in file("."))
+
+addCommandAlias("fmt", "; scalafmtSbt ; scalafmtAll ; Test / scalafmtAll ")
+addCommandAlias("chk", "scalafmtSbtCheck ; scalafmtCheck ; Test / scalafmtCheck ")
