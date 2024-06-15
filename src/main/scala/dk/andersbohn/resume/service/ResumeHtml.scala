@@ -1,6 +1,6 @@
 package dk.andersbohn.resume.service
 
-import dk.andersbohn.resume.domain.{CvItem, Resume}
+import dk.andersbohn.resume.domain.{CvItem, Language, Resume}
 import zio.http._
 import zio.http.template.Html.raw
 import zio.http.template._
@@ -23,17 +23,22 @@ object ResumeHtml {
   case class PersonalInfo(summary: String, features: List[String], company: String, title: String, timeSpan: String)
       extends CvItem
 
+  def languageMap(languages: List[Language]) =
+    languages
+      .groupBy(_.fluency)
+      .toSeq
+      .sortBy(_._1)
+      .reverse
+      .map { case (fluency, languages) =>
+        fluency + " " + languages.map(_.language).mkString(" and ")
+      }
+      .mkString(", ")
+
   def personalInfo(implicit resume: Resume) = List(
     PersonalInfo("", List.empty, Messages("born_label"), Messages("born"), ""),
     PersonalInfo("", List.empty, Messages("citizenship_label"), Messages("citizenship"), ""),
     PersonalInfo("", List.empty, Messages("status_label"), Messages("status"), ""),
-    PersonalInfo(
-      "",
-      List.empty,
-      Messages("languages_label"),
-      resume.languages.map(l => l.language + ": " + l.fluency).mkString(" "),
-      ""
-    )
+    PersonalInfo("", List.empty, Messages("languages_label"), languageMap(resume.languages), "")
   )
 
   val Nbsp = raw("&nbsp;")
@@ -141,75 +146,13 @@ object ResumeHtml {
       ),
       div(
         classAttr := "wrap",
-        div(classAttr := "content", header(Some("hide-on-phone")), cvItems(resume.education, "education_section_title"))
-      ),
-      div(
-        classAttr := "wrap",
-        div(classAttr := "content", header(Some("hide-on-phone")), cvItems(personalInfo, "personal_heading")),
-        cvItems(resume.interests, "interests_heading")
+        div(
+          classAttr := "content",
+          header(Some("hide-on-phone")),
+          cvItems(resume.education, "education_section_title"),
+          cvItems(resume.interests, "interests_heading")
+        )
       )
-//        ,
-//        div(
-//          classAttr := "row",
-//          div(classAttr := "span3", Nbsp),
-//          div(classAttr := "span9", h3(classAttr := "cv-section-title"), Messages("references_heading"))
-//        ),
-//        div(
-//          classAttr := "row cv-item",
-//          div(classAttr := "span3 cv-item-description", Nbsp),
-//          div(
-//            classAttr   := "span9 cv-item-details",
-//            ul(
-//              classAttr := "unstyled last",
-//              li(
-//                Messages("ref_webcv"),
-//                a(hrefAttr := "http://cv.andersbohn.dk/@{l.language}", s"http://cv.andersbohn.dk/en")
-//              ),
-//              li(
-//                Messages("ref_linkedin"),
-//                a(hrefAttr := "http://dk.linkedin.com/in/andersbohn", s"http://dk.linkedin.com/in/andersbohn")
-//              )
-//            )
-//          )
-//        ),
-//        div(
-//          classAttr := "row",
-//          div(classAttr := "span3", Nbsp),
-//          div(classAttr := "span9", h3(classAttr := "cv-section-title"), Messages("contact_heading"))
-//        ),
-//        div(
-//          classAttr := "row cv-item",
-//          styleAttr := "margin-bottom" -> " 0;",
-//          div(
-//            classAttr := "span3 cv-item-description",
-//            h6(resume.basics.name),
-//            address(
-//              classAttr := "text-right hide-on-phone",
-//               TODO note the divergence between fully transparant info and sort of personal - but printable pdfs info - like the post address...
-//              Messages("street"),
-//              br(),
-//              Messages("city"),
-//              br(),
-//              Messages("country")
-//            )
-//          ),
-//          div(
-//            classAttr := "span9 cv-item-details",
-//            ul(
-//              classAttr := "contact-info-2 fixed",
-//              li(i(classAttr := "icon icon-inbox")), a(hrefAttr := s"mailto:#", Messages("email")),
-//              li(span(classAttr := "mute hide-on-phone"), "×"),
-//              li(i(classAttr := "icon icon-bullhorn")), Messages("phone")
-//            ),
-//            p(
-//              classAttr := "credits no-print",
-//              "Note: Responsive CV HTML-template courtesy of",
-//              a(hrefAttr := "http://themeforest.net/user/completethemes completethemes")
-//            )
-//          )
-//        )
-//      ): _*
-//    )
     )
 
 }
