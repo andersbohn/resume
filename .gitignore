@@ -1,7 +1,12 @@
-# Scala
-.bloop
-.metals
-.idea
-.bsp
+.ammonite/
+.bloop/
+.bsp/
+.dotty-ide*
+.idea/
+.metals/
+.scala/
+.vscode/
+*.worksheet.sc
+metals.sbt
+.DS_Store
 target/
-project/project

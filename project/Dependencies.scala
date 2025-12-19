@@ -1,16 +1,13 @@
-object Dependencies {
+import sbt._
 
-  object Version {
-    val animus        = "0.1.9"
-    val boopickle     = "1.4.0"
-    val laminar       = "0.13.1"
-    val laminext      = "0.13.10"
-    val postgres      = "42.2.23"
-    val quillZio      = "3.9.0"
-    val scalaJavaTime = "2.3.0"
-    val zio           = "2.1.2"
-    val zioConfig     = "4.0.0-RC12"
-    val zioHttp       = "3.0.0-RC8"
-    val zioJson       = "0.4.2"
-  }
+object Dependencies {
+  val zioVersion     = "2.0.13"
+  val zioHttpVersion = "3.0.0-RC9"
+
+  val zioHttp = "dev.zio" %% "zio-http" % zioHttpVersion
+
+  val zioTest    = "dev.zio" %% "zio-test"     % zioVersion % Test
+  val zioTestSBT = "dev.zio" %% "zio-test-sbt" % zioVersion % Test
+
+  val zioTestMagnolia = "dev.zio" %% "zio-test-magnolia" % zioVersion % Test
 }

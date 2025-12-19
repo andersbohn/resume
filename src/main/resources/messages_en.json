@@ -1,0 +1,32 @@
+{
+  "working_experience_page1_drop_take": ["3","1"],
+  "born_label": ["Born"],
+  "citizenship_label": ["Citizenship"],
+  "citizenship_summary": ["Danish citizen, Zurich resident with C-Permit, Swiss citizenship application in progress."],
+  "status_label": ["Status"],
+  "status": ["Single"],
+  "languages_label": ["Languages"],
+  "email_label": ["Email"],
+  "webcv_label": [""],
+  "phone_label": [""],
+  "phone": ["+41 76 666 5117"],
+  "permit": ["Swiss C Permit"],
+  "citizenship": ["Citizenship in progress"],
+  "linkedin_label": [""],
+  "github_label": [""],
+  "background_heading": ["Background"],
+  "interests_heading": ["Personal Profile"],
+  "summary_label": ["Profile"],
+  "skills_label": ["Skills"],
+  "working_experience_heading": ["Working Experience"],
+  "working_experience_page2_heading": ["Working Experience (2)"],
+  "education_heading": ["Education"],
+  "personal_heading": ["Personal"],
+  "skills_heading": ["Skills"],
+  "skills_list": [
+    "Recent ten years focusing on Functional development with Scala. Play, Akka, Cats, ZIO, Tapir, Doobie and more.",
+    "Solid foundation on assisting areas for CI, dockers, Kubernetes and Postgres.",
+    "Collaborated closely with Product Owners to translate complex requirements in the crypto-custody space into scalable backend architectures",
+    "Data pipeline and orchestration with Spark, PySpark, Pandas and Airflow"
+  ]
+}
