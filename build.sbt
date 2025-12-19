@@ -1,31 +1,42 @@
-name         := "resume"
-organization := "dk.andersbohn"
+import Dependencies._
 
-version := "2.0-SNAPSHOT"
+ThisBuild / organization      := "dk.bohnjespersen.anders"
+ThisBuild / version           := "0.0.1"
+ThisBuild / scalaVersion      := "3.7.4"
+ThisBuild / fork              := true
+Compile / fork                := true
+ThisBuild / scalacOptions     := optionsOnOrElse("2.13", "2.12")("-Ywarn-unused")("").value
+ThisBuild / semanticdbEnabled := true
+ThisBuild / semanticdbVersion := scalafixSemanticdb.revision
+ThisBuild / scalafixDependencies ++= List("com.github.liancheng" %% "organize-imports" % "0.6.0")
+Compile / javaOptions += "-Dfile.encoding=UTF-8"
 
-scalaVersion := "2.13.6"
-
-testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
-
-import Dependencies.Version
-
-scalacOptions ++= Seq("-Xfatal-warnings")
-
-libraryDependencies ++= Seq(
-  "dev.zio" %% "zio"                 % Version.zio,
-  "dev.zio" %% "zio-test"            % Version.zio % Test,
-  "dev.zio" %% "zio-test-sbt"        % Version.zio % Test,
-  "dev.zio" %% "zio-json"            % Version.zioJson,
-  "dev.zio" %% "zio-http"            % Version.zioHttp,
-  "dev.zio" %% "zio-config"          % Version.zioConfig,
-  "dev.zio" %% "zio-config-typesafe" % Version.zioConfig,
-  "dev.zio" %% "zio-config-magnolia" % Version.zioConfig
+def settingsApp = Seq(
+  name                      := "resume",
+  Compile / run / mainClass := Option("dk.bohnjespersen.anders.resume.MainApp"),
+  testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework"),
+  libraryDependencies ++= Seq(
+    zioHttp,
+    zioTest,
+    zioTestSBT,
+    zioTestMagnolia,
+  ),
 )
-scalacOptions ++= Seq("-Ymacro-annotations", "-Xfatal-warnings", "-deprecation")
-scalaVersion := "2.13.6"
-testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
+
+def settingsDocker = Seq(
+  Docker / version := version.value,
+  dockerBaseImage  := "eclipse-temurin:20.0.1_9-jre",
+)
 
 lazy val root = (project in file("."))
+  .enablePlugins(JavaAppPackaging)
+  .settings(settingsApp)
+  .settings(settingsDocker)
 
-addCommandAlias("fmt", "; scalafmtSbt ; scalafmtAll ; Test / scalafmtAll ")
-addCommandAlias("chk", "scalafmtSbtCheck ; scalafmtCheck ; Test / scalafmtCheck ")
+addCommandAlias("fmt", "scalafmt; Test / scalafmt; sFix;")
+addCommandAlias("fmtCheck", "scalafmtCheck; Test / scalafmtCheck; sFixCheck")
+addCommandAlias("sFix", "scalafix OrganizeImports; Test / scalafix OrganizeImports")
+addCommandAlias(
+  "sFixCheck",
+  "scalafix --check OrganizeImports; Test / scalafix --check OrganizeImports",
+)

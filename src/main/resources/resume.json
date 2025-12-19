@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "theme": "autumn"
+  },
+  "basics": {
+    "name": "Anders Bohn Jespersen",
+    "label": "Scala Developer",
+    "image": "https://cv.andersbohn.dk/assets/images/profilfoto1.jpg",
+    "summary": "Versatile and strong problem solver on all levels. Capable of clarifying requirements with product owners to deliver high-reliability systems within agreed constraints. Committed to fostering a team culture of technical excellence through mentorship, pragmatic system design, and clear communication across multi-functional teams.",
+    "website": "https://cv.andersbohn.dk/en",
+    "email": "anders@bohnjespersen.dk",
+    "location": {
+      "city": "Zürich",
+      "countryCode": "CH"
+    },
+    "birth": {
+      "place": "Denmark",
+      "state": "Grenaa",
+      "date": "1972"
+    },
+    "profiles": [
+      {
+        "url": "https://linkedin.com/in/andersbohn",
+        "username": "andersbohn",
+        "network": "linkedin"
+      },
+      {
+        "url": "https://github.com/andersbohn",
+        "username": "andersbohn",
+        "network": "github"
+      },
+      {
+        "url": "https://cv.andersbohn.dk/en",
+        "username": "andersbohn",
+        "network": "webcv"
+      }
+    ]
+  },
+  "languages": [
+    {
+      "language": "Danish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "German",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "French",
+      "fluency": "Basic"
+    }
+  ],
+  "education": [
+    {
+      "endDate": "1991-06-01",
+      "startDate": "1988-07-01",
+      "area": "High school",
+      "studyType": "Math, Physics, Chemistry",
+      "institution": "Grenaa Gymnasium"
+    },
+    {
+      "endDate": "1995-06-01",
+      "startDate": "1994-06-01",
+      "area": "GCSE",
+      "studyType": "HHx - Business, Marketing, Economics, Accounting, Law",
+      "institution": "Handelsskolen i Randers"
+    },
+    {
+      "endDate": "1996-01-01",
+      "startDate": "2000-01-01",
+      "area": "Datanom - IT Management and Software development",
+      "studyType": "Part-time",
+      "institution": "Aarhus Business Colleges"
+    },
+    {
+      "endDate": "2006-01-01",
+      "startDate": "2002-01-01",
+      "area": "Philosophy and History of Ideas",
+      "studyType": "Part-time",
+      "institution": "Aarhus University"
+    }
+  ],
+  "references": [
+    {
+      "reference": "Interim certificate / Zwischenzeugnis",
+      "name": "Ask me. Available from Leonteq Securities AG in German and from Teralytics AG in English"
+    },
+    {
+      "reference": "Anything else?",
+      "name": "Request some wishes in terms of Company I worked for and role, and I will go find one for you :-)"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Big Data Engineer",
+      "keywords": [
+        "Spark / Spark SQL",
+        "Hadoop / HDFS",
+        "Airflow",
+        "Python",
+        "Clickhouse",
+        "Google Cloud",
+        "Kubernetes"
+      ]
+    },
+    {
+      "name": "Scala Software Developer",
+      "keywords": [
+        "Scala",
+        "ZIO",
+        "Cats",
+        "ScalaZ",
+        "Doobie",
+        "Http4s, Tapir, Swagger"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "keywords": [
+        "Jenkins / CircleCI / GitHub Actions",
+        "Kubernetes / OnPrem and Google Cloud / AWS",
+        "Docker / Docker compose",
+        "Kustomize / Ansible / ..."
+      ]
+    },
+    {
+      "name": "Leadership",
+      "keywords": [
+        "Solution ownership",
+        "Team lead / Coaching / Architect",
+        "Transparent communicator"
+      ]
+    }
+  ],
+  "awards": [],
+  "work": [
+    {
+      "summary": "Scala Developer on Custody Backend Core team. Covering assorted blockchains and cryptography, including smart contracts and integration with notary/merkle tree, vault, Bookkeeping, MPS, MPC, SQL, MQ. Using Scala, ZIO, Doobie, Tapir and property based integration tests. Kubernetes, Docker, Observability, Temporal, Keycloak. ",
+      "website": "https://ripple.com",
+      "name": "Metaco/Ripple",
+      "location": "Lausanne/Geneva",
+      "position": "Senior Software Engineer",
+      "startDate": "2022-05-15",
+      "endDate": "2026-01-01",
+      "highlights": [
+        "ZIO and property based integration tests",
+        "Blockchains, Cryptography",
+        "Kubernetes, Docker",
+        "OTEL, Observability, Grafana, Temporal, Keycloak",
+        "Copilot and Augment AI investigation for advanced code reviews and implementation support."
+      ]
+    },
+    {
+      "summary": "Big data mobility analytics platform developer. Analytics Platform team on Apache Spark, Apache Airflow, both Scala and Python, running with Docker, K8s, Kustomize, Ansible and much more.",
+      "website": "https://teralytics.com",
+      "name": "Teralytics",
+      "location": "Zürich",
+      "position": "Senior Software Engineer",
+      "startDate": "2018-09-01",
+      "endDate": "2022-04-30",
+      "highlights": [
+        "Focus switch onto very big data",
+        "Hadoop and other new big data storage platforms.",
+        "Designed a cutting service using ZIO to serve data from object storage to a Clickhouse cluster.",
+        "PySpark, Python, Python Pandas, Jupyter, Airflow",
+        "A lot of Kubernetes and DevOps"
+      ]
+    },
+    {
+      "summary": "Scala Developer on Market Price Monitoring System Primary Scala Developer on greenfield 24x7 spot price monitoring system",
+      "website": "https://leonteq.com",
+      "name": "Leonteq ",
+      "location": "Zürich",
+      "position": "Senior Software Engineer",
+      "startDate": "2014-08-15",
+      "endDate": "2018-08-31",
+      "highlights": [
+        "Built 24x7 spot price monitoring service from the ground up with on Akka. ",
+        "Akka, ScalaZ, Oracle backend and micro service oriented integrations over MQ.",
+        "Elastic-search index and new UI built with Angular 2 and Typescript",
+        "In production 12 months+ with 99.9% uptime and real-time processing of $X million price ticks",
+        "Service and event driven - ScalaZ, Akka, RabbitMQ, Protobuf",
+        "Complete UI - Akka Http, Angular 2, Typescript and gRPC"
+      ]
+    },
+    {
+      "position": "IT Architect and Senior Developer",
+      "name": "Lenio, Miracle",
+      "startDate": "2006-12-01",
+      "endDate": "2014-06-30",
+      "summary": "Primarily Java EE development on JBoss. JBoss ESB, jPBM, and Scala. Projects end-to-end from conception to maintenance.",
+      "highlights": [
+        "Service Oriented architectures with Java, .NET and Ruby on Rails, RedHat JBoss",
+        "Lead Architect/Core Architect on eTL for the Land Registration Court. Complete move to electronic registration of deeds, mortgages and easements on all real estate in Denmark.",
+        "Complete rewrite in Scala of an existing system for power trading and reporting in production 2010.",
+        "Daily registration and calculations on bids on the electrical power market.",
+        "Control room functions with aggregate view of all production and consumption clients",
+        "Automated starting and stopping of production/consumption at connected facilities when bids on regulating power are activated.",
+        "Miracle acquired Lenio in July 2010"
+      ],
+      "keywords": []
+    },
+    {
+      "position": "IT Architect",
+      "name": "LEC, Maersk Data, IBM",
+      "startDate": "1997-07-01",
+      "endDate": "2006-11-30",
+      "summary": "Development, proposals, consulting, team lead, IT Architect at IBM/Maersk Data Public.",
+      "highlights": [
+        "Public sector department. Development, proposals, consulting and technical team lead",
+        "Maersk Data acquired LEC 2000",
+        "IBM acquired Maersk Data 2004",
+        "Advisory IT Architect at IBM Denmark"
+      ]
+    },
+    {
+      "position": "IT Consultant",
+      "name": "Silvan, Danske Traelast",
+      "startDate": "1995-07-01",
+      "endDate": "1997-06-30",
+      "summary": "PC Server administration, Office and Retail store PC support and maintenance",
+      "highlights": []
+    },
+    {
+      "position": "National Service and UN Security Guard",
+      "name": "National service, United Nations",
+      "startDate": "1991-06-01",
+      "endDate": "1994-08-31",
+      "summary": "Danish army infantry national service and two 6 month deployments in the UN peace keeping force at Checkpoint and Observation posts in Croatia and Secuirty Guard at HQ by Sarajevo, Bosnia.",
+      "highlights": []
+    }
+  ],
+  "interests": [
+    {
+      "name": "Early Career",
+      "keywords": [
+        "Education and early work 1991-2006. Evolving from Mainframe system development - paper and waterfall - over Oracle client-server and then N-tier, quite early on Java and very early adopter on Scala in 2010. Educational background part-time. More details can be provided - as listed also on my LinkedIn profile.",
+        "System Developer LEC, Architect Maersk Data and IBM Denmark",
+        "Part-time studies Datanom at Aarhus Business Colleges and History of Ideas at Aarhus University",
+        "Danish army infantry national service and two 6 month deployments in the UN peace keeping force at Checkpoint and Observation posts in Croatia and Security Guard at HQ by Sarajevo, Bosnia.",
+        "High school - Math, Physics and Chemistry"
+      ]
+    },
+    {
+      "name": "Freetime",
+      "keywords": [
+        "Alpine mountaineering and martial artist",
+        "Alpine hiking, sport and rock climbing",
+        "Certified Basic Ski Instructor",
+        "Swiss Alpine Club certified Tour Guide",
+        "Karate black-belt and Brazilian Jiu-Jitsu"
+      ]
+    }
+  ]
+}

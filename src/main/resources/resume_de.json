@@ -1,0 +1,220 @@
+{
+  "basics": {
+    "label": "Scala Entwickler",
+    "image": "https://cv.andersbohn.dk/assets/images/profilfoto1.jpg",
+    "summary": "Vielseitiger und starker Problemlöser auf allen Ebenen. Erfahren in der Klärung und Verhandlung von Anforderungen mit dem Product Management sowie in der zuverlässigen Umsetzung unter Einhaltung des „Magischen Dreiecks“ (Zeit, Kosten, Qualität). Ich setze mich für eine Teamkultur technischer Exzellenz ein – durch Mentoring, pragmatisches Systemdesign und klare Kommunikation in funktionsübergreifenden Teams.",
+    "website": "https://cv.andersbohn.dk/de",
+    "birth": {
+      "place": "Dänemark"
+    }
+  },
+  "languages": [
+    {
+      "language": "Dänisch",
+      "fluency": "Muttersprache"
+    },
+    {
+      "language": "Deutsch",
+      "fluency": "Fliessend"
+    },
+    {
+      "language": "Englisch",
+      "fluency": "Fliessend"
+    },
+    {
+      "language": "Französisch",
+      "fluency": "Grundkenntnisse"
+    }
+  ],
+  "education": [
+    {
+      "endDate": "1991-06-01",
+      "startDate": "1988-07-01",
+      "area": "High school",
+      "studyType": "Math, Physics, Chemistry",
+      "institution": "Grenaa Gymnasium"
+    },
+    {
+      "endDate": "1995-06-01",
+      "startDate": "1994-06-01",
+      "area": "GCSE",
+      "studyType": "HHx - Business, Marketing, Economics, Accounting, Law",
+      "institution": "Handelsskolen i Randers"
+    },
+    {
+      "endDate": "1996-01-01",
+      "startDate": "2000-01-01",
+      "area": "Datanom - IT Management and Software development",
+      "studyType": "Part-time",
+      "institution": "Aarhus Business Colleges"
+    },
+    {
+      "endDate": "2006-01-01",
+      "startDate": "2002-01-01",
+      "area": "Philosophy and History of Ideas",
+      "studyType": "Part-time",
+      "institution": "Aarhus University"
+    }
+  ],
+  "references": [
+    {
+      "reference": "Interim certificate / Zwischenzeugnis",
+      "name": "Ask me. Available from Leonteq Securities AG in German and from Teralytics AG in English"
+    },
+    {
+      "reference": "Anything else?",
+      "name": "Request some wishes in terms of Company I worked for and role, and I will go find one for you :-)"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Big Data Engineer",
+      "keywords": [
+        "Spark / Spark SQL",
+        "Hadoop / HDFS",
+        "Airflow",
+        "Python",
+        "Clickhouse",
+        "Google Cloud",
+        "Kubernetes"
+      ]
+    },
+    {
+      "name": "Scala Software Developer",
+      "keywords": [
+        "Scala",
+        "ZIO",
+        "Cats",
+        "ScalaZ",
+        "Doobie",
+        "Http4s, Tapir, Swagger"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "keywords": [
+        "Jenkins / CircleCI / GitHub Actions",
+        "Kubernetes / OnPrem and Google Cloud / AWS",
+        "Docker / Docker compose",
+        "Kustomize / Ansible / ..."
+      ]
+    },
+    {
+      "name": "Leadership",
+      "keywords": [
+        "Solution ownership",
+        "Team lead / Coaching / Architect",
+        "Transparent communicator"
+      ]
+    }
+  ],
+  "awards": [],
+  "work": [
+    {
+      "summary": "Senior Software Engineer Scala-Entwickler im Custody Backend Core-Team. Verantwortlich für Blockchain-Integrationen und Kryptographie (Smart Contracts, Merkle Trees, Vault-Systeme, Bookkeeping).",
+      "website": "https://ripple.com",
+      "name": "Metaco/Ripple",
+      "location": "Lausanne/Geneva",
+      "position": "Senior Software Engineer",
+      "startDate": "2022-05-15",
+      "endDate": "2026-01-01",
+      "highlights": [
+        "Tech Stack: Scala, ZIO, Doobie, Tapir, Temporal, Keycloak.",
+        "Infrastruktur: Kubernetes, Docker, OTEL (Observability).",
+        "Innovation: Implementierung von KI-gestützten Code-Reviews (Copilot, Augment AI)."
+      ]
+    },
+    {
+      "summary": "Entwicklung einer Big Data Plattform für Mobilitätsanalysen. Fokus auf Skalierbarkeit und massive Datenmengen.",
+      "website": "https://teralytics.com",
+      "name": "Teralytics",
+      "location": "Zürich",
+      "position": "Senior Software Engineer",
+      "startDate": "2018-09-01",
+      "endDate": "2022-04-30",
+      "highlights": [
+        "Architektur: Design eines ZIO-basierten Micro-Services zur Datenbereitstellung aus Object Storage in Clickhouse-Cluster.",
+        "Big Data: Apache Spark, Airflow, PySpark, Pandas.",
+        "DevOps: Migration und Betrieb auf Kubernetes mittels Kustomize und Ansible."
+      ]
+    },
+    {
+      "summary": "Hauptverantwortlicher Scala-Entwickler für ein Greenfield-Projekt zur 24/7 Marktpreisüberwachung.",
+      "website": "https://leonteq.com",
+      "name": "Leonteq",
+      "location": "Zürich",
+      "position": "Senior Software Engineer",
+      "startDate": "2014-08-15",
+      "endDate": "2018-08-31",
+      "highlights": [
+        "Umsetzung: Aufbau des Monitoring-Service von Grund auf mittels Akka und ScalaZ.",
+        "Integration: Microservice-Architektur über Message Queues (RabbitMQ) und Protobuf.",
+        "Frontend: Aufbau eines Elasticsearch-Index und UI-Entwicklung mit Angular 2 und TypeScript."
+      ]
+    },
+    {
+      "position": "IT-Architekt und Senior Developer",
+      "name": "Lenio, Miracle",
+      "startDate": "2006-12-01",
+      "endDate": "2014-06-30",
+      "summary": "Fokus auf Java EE (JBoss) und frühe Scala-Projekte. End-to-End Projektverantwortung.",
+      "highlights": [
+        "Land Registry Court (Dänemark): Leitender Architekt für die Digitalisierung von Grundbucheinträgen (eTL).",
+        "Energiesektor: Kompletter Rewrite eines Stromhandels-Systems in Scala (bereits 2010 produktiv).",
+        "Automatisierung: Steuerung von Produktionsanlagen basierend auf Marktsignalen (Regelenergie)."
+      ],
+      "keywords": []
+    },
+    {
+      "position": "IT Architect",
+      "name": "LEC, Maersk Data, IBM",
+      "startDate": "1997-07-01",
+      "endDate": "2006-11-30",
+      "summary": "Development, proposals, consulting, team lead, IT Architect at IBM/Maersk Data Public.",
+      "highlights": [
+        "Public sector department. Development, proposals, consulting and technical team lead",
+        "Maersk Data acquired LEC 2000",
+        "IBM acquired Maersk Data 2004",
+        "Advisory IT Architect at IBM Denmark"
+      ]
+    },
+    {
+      "position": "IT Consultant",
+      "name": "Silvan, Danske Traelast",
+      "startDate": "1995-07-01",
+      "endDate": "1997-06-30",
+      "summary": "PC Server administration, Office and Retail store PC support and maintenance",
+      "highlights": []
+    },
+    {
+      "position": "National Service and UN Security Guard",
+      "name": "National service, United Nations",
+      "startDate": "1991-06-01",
+      "endDate": "1994-08-31",
+      "summary": "Danish army infantry national service and two 6 month deployments in the UN peace keeping force at Checkpoint and Observation posts in Croatia and Secuirty Guard at HQ by Sarajevo, Bosnia.",
+      "highlights": []
+    }
+  ],
+  "interests": [
+    {
+      "name": "Werdegang",
+      "keywords": [
+        "(1991–2006) Entwicklung vom Mainframe-Bereich (Wasserfall-Modell) über Oracle Client-Server bis hin zu N-tier Java Enterprise. Früher Anwender von Java und seit 2010 Early Adopter von Scala. Mein Ausbildungshintergrund erfolgte berufsbegleitend. Weitere Details finden Sie auf meinem LinkedIn-Profil.",
+        "Rollen: System-Entwickler bei LEC, Architekt bei Maersk Data und IBM Dänemark.",
+        "Ausbildung: Datanom (Informatik) am Aarhus Business College; Philosophie/Ideengeschichte an der Universität Aarhus.",
+        "Militärdienst: Wehrpflicht Dänische Infanterie sowie zwei sechsmonatige UN-Friedenseinsätze (Kroatien/Bosnien).",
+        "High school - Math, Physics and Chemistry"
+      ]
+    },
+    {
+      "name": "Freizeit",
+      "keywords": [
+        "Bergsport und Kampfsport.",
+        "Alpinewandern, Sport- und Felsklettern.",
+        "Zertifizierter Ski-Instruktor (Basic).",
+        "SAC-Uto Tourenleiter (Schweizer Alpen-Club).",
+        "Karate (Schwarzer Gurt) und Brazilian Jiu-Jitsu"
+      ]
+    }
+  ]
+}

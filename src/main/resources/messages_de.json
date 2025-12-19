@@ -1,0 +1,32 @@
+{
+  "working_experience_page1_drop_take": ["3","1"],
+  "born_label": ["Born"],
+  "citizenship_label": ["Staatsangehörigkeit"],
+  "citizenship_summary": ["Dänischer Staatsbürger, wohnhaft in Zürich mit Niederlassungsbewilligung C. Einbürgerungsverfahren in der Schweiz läuft."],
+  "status_label": ["Status"],
+  "status": ["Ledig"],
+  "languages_label": ["Sprachen"],
+  "email_label": ["Email"],
+  "webcv_label": [""],
+  "phone_label": [""],
+  "phone": ["+41 76 666 5117"],
+  "permit": ["Swiss C Permit"],
+  "citizenship": ["Citizenship in progress"],
+  "linkedin_label": [""],
+  "github_label": [""],
+  "background_heading": ["Background"],
+  "interests_heading": ["Persönliches Profil"],
+  "summary_label": ["Profile"],
+  "skills_label": ["Skills"],
+  "working_experience_heading": ["Berufserfahrung"],
+  "working_experience_page2_heading": ["Berufserfahrung (2)"],
+  "education_heading": ["Education"],
+  "personal_heading": ["Personal"],
+  "skills_heading": ["Skills"],
+  "skills_list": [
+    "Fokus letzte 10 Jahre: Funktionale Softwareentwicklung mit Scala (ZIO, Cats, Akka, Play, Tapir, Doobie u.a.).",
+    "Infrastruktur: Fundierte Kenntnisse in CI/CD, Docker, Kubernetes und Postgres.",
+    "Stakeholder-Management: Enge Zusammenarbeit mit Product Ownern zur Übersetzung komplexer Krypto-Custody-Anforderungen in skalierbare Backend-Architekturen.",
+    "Data Engineering: Daten-Pipelines und Orchestrierung mit Spark (PySpark), Pandas und Airflow."
+  ]
+}
