@@ -1,12 +1,8 @@
-.ammonite/
 .bloop/
 .bsp/
-.dotty-ide*
 .idea/
-.metals/
 .scala/
-.vscode/
+.wrangler
 *.worksheet.sc
-metals.sbt
 .DS_Store
 target/
