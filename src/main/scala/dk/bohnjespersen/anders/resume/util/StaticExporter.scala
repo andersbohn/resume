@@ -44,7 +44,7 @@ object StaticExporter extends ZIOAppDefault {
                 messages <- gistJson.messages(lang)
                 patch  = MainApp.aspectOrLangPatch(None, aspect, lang)
                 resume   <- gistJson.resume(lang, patch)
-                ht = ResumeHtml.resume(using resume, messages, false)
+                ht = ResumeHtml.resume(lang, aspect)(using resume, messages, false)
               } yield Response.html(ht),
             )
 

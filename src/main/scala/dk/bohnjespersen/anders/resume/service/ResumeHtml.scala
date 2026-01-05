@@ -8,6 +8,7 @@ import zio.*
 import zio.http.*
 import zio.http.template.{footer, *}
 
+import dk.bohnjespersen.anders.resume.domain.types.{Aspect, Lang}
 import dk.bohnjespersen.anders.resume.service.Messages
 
 object ResumeHtml {
@@ -109,14 +110,16 @@ object ResumeHtml {
   def makeFooter(
       gitRef: String,
       extraDivClass: Option[String] = None,
+      extraPs: Int = 0,
   ): Dom = div(
-    classAttr := s"row ${extraDivClass.mkString}",
+    classAttr := s"row print-footer ${extraDivClass.mkString}",
     div(
       classAttr := "span4",
       Nbsp,
     ),
     div(
       classAttr := "span4",
+      (1 to extraPs).map(_ => p(Nbsp)),
       footer(
         i(s"$gitRef", classAttr := "version-tag"),
       ),
@@ -200,15 +203,29 @@ object ResumeHtml {
       body(content),
     )
 
-  def resume(implicit resume: Resume, messages: Messages, deko: Boolean): Html = {
-    val gitRef               = sys
+  private def jsonPairInts(key: String)(implicit
+      resume: Resume,
+      messages: Messages,
+  ): (Int, Int) = {
+    val lst = messages
+      .mfks(key)
+      .map(_.toInt)
+    lst(0) -> lst(1)
+  }
+
+  def resume(lang: Lang, aspect: Aspect)(implicit
+      resume: Resume,
+      messages: Messages,
+      deko: Boolean,
+  ): Html = {
+    val gitRef                           = sys
       .env
       .get("GITHUB_REF_NAME")
       .orElse(sys.env.get("GITHUB_SHA").map(_.take(7)))
       .getOrElse("local-dev " + ZonedDateTime.now(ZoneId.of("Zulu")).format(dateTimeFormatter))
-    val weDropTake           = messages.mfks("working_experience_page1_drop_take").map(_.toInt)
-    val (dropCount, takeCnt) = weDropTake(0) -> weDropTake(1)
-    val personalAsInterests  = List(
+    val (extraNbspPage1, extraNbspPage2) = jsonPairInts("nbsps-before-footer")
+    val (dropCount, takeCnt)             = jsonPairInts("working_experience_page1_drop_take")
+    val personalAsInterests              = List(
       Interest(
         messages.mfk("skills_label"),
         messages.mfks("skills_list"),
@@ -223,7 +240,7 @@ object ResumeHtml {
       ),
     )
     main(
-      "Resume Anders Bohn Jespersen",
+      s"CV - $aspect - $lang - Anders Bohn Jespersen - $gitRef",
       div(
         classAttr := "wrap",
         div(
@@ -237,7 +254,7 @@ object ResumeHtml {
             ),
           ),
           cvItems(personalAsInterests ::: resume.interests, "interests_heading"),
-          makeFooter(gitRef, Some("hide-on-phone")),
+          makeFooter(gitRef, Some("hide-on-phone"), extraNbspPage1),
         ),
       ),
       div(
@@ -246,7 +263,7 @@ object ResumeHtml {
           classAttr := "content",
           header(Some("hide-on-phone")),
           cvItems(resume.work.dropRight(dropCount), "working_experience_heading"),
-          makeFooter(gitRef, Some("hide-on-phone")),
+          makeFooter(gitRef, Some("hide-on-phone"), extraNbspPage2),
         ),
       ),
     )

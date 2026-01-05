@@ -46,7 +46,7 @@ object MainApp extends ZIOAppDefault {
               for {
                 messages <- gistJson.messages(lang)
                 resume   <- gistJson.resume(lang, patch)
-                ht = ResumeHtml.resume(using resume, messages, deko)
+                ht = ResumeHtml.resume(lang, aspect)(using resume, messages, deko)
               } yield Response.html(ht),
             )
             .tapError(e => Console.printLine(s"Failed to serve resource $lang $deko $aspect : $e"))
