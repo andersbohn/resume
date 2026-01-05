@@ -23,6 +23,7 @@ jobs:
       - name: Build Static Site
         run: |
           sbt "runMain dk.bohnjespersen.anders.resume.util.StaticExporter"
+          mkdir target/dist/assets
           cp -r src/main/resources/* target/dist/assets/
 
       - name: Deploy to Cloudflare Pages
