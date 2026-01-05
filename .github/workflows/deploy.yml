@@ -1,4 +1,4 @@
-name: Production Deploy
+name: Production Release
 on:
   push:
     tags:
@@ -10,14 +10,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Scala
-        uses: coursier/setup-action@v1
+      - name: Setup Java
+        uses: actions/setup-java@v4
         with:
-          jvm: temurin:17
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'sbt' # This caches your library dependencies
+
+      - name: Setup sbt
+        uses: sbt/setup-sbt@v1
 
       - name: Build Static Site
         run: |
-          sbt "runMain StaticExporter"
+          sbt "runMain dk.bohnjespersen.anders.resume.util.StaticExporter"
           cp -r src/main/resources/* target/dist/assets/
 
       - name: Deploy to Cloudflare Pages
