@@ -1,14 +1,19 @@
 package dk.andersbohn.resume.service
 
+import java.time.format.DateTimeFormatter
+import java.time.{Instant, LocalDateTime, ZoneId, ZonedDateTime}
+
 import dk.andersbohn.resume.domain.{CvItem, Interest, Resume}
 import zio.*
 import zio.http.*
-import zio.http.template.*
+import zio.http.template.{footer, *}
 
 import dk.bohnjespersen.anders.resume.service.Messages
 
 object ResumeHtml {
   val flags = Map("Danish" -> "🇩🇰", "English" -> "🇬🇧", "German" -> "🇩🇪", "French" -> "🇫🇷")
+
+  private val dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
 
   val DekoImages = Map(
     "Metaco/Ripple" -> List(
@@ -101,6 +106,27 @@ object ResumeHtml {
       ),
     )
 
+  def makeFooter(
+      gitRef: String,
+      extraDivClass: Option[String] = None,
+  ): Dom = div(
+    classAttr := s"row ${extraDivClass.mkString}",
+    div(
+      classAttr := "span4",
+      Nbsp,
+    ),
+    div(
+      classAttr := "span4",
+      footer(
+        i(s"$gitRef", classAttr := "version-tag"),
+      ),
+    ),
+    div(
+      classAttr := "span4",
+      Nbsp,
+    ),
+  )
+
   def cvItems(list: List[CvItem], headerKey: String)(implicit
       resume: Resume,
       messages: Messages,
@@ -175,8 +201,11 @@ object ResumeHtml {
     )
 
   def resume(implicit resume: Resume, messages: Messages, deko: Boolean): Html = {
-    val buildInfo            = sys.env.getOrElse("GITHUB_SHA", "github_sha n/a").take(7)
-    val timestamp            = java.time.Instant.now().toString
+    val gitRef               = sys
+      .env
+      .get("GITHUB_REF_NAME")
+      .orElse(sys.env.get("GITHUB_SHA").map(_.take(7)))
+      .getOrElse("local-dev " + ZonedDateTime.now(ZoneId.of("Zulu")).format(dateTimeFormatter))
     val weDropTake           = messages.mfks("working_experience_page1_drop_take").map(_.toInt)
     val (dropCount, takeCnt) = weDropTake(0) -> weDropTake(1)
     val personalAsInterests  = List(
@@ -208,7 +237,7 @@ object ResumeHtml {
             ),
           ),
           cvItems(personalAsInterests ::: resume.interests, "interests_heading"),
-//          cvItems(resume.work.take(takeCount), "working_experience_heading"),
+          makeFooter(gitRef, Some("hide-on-phone")),
         ),
       ),
       div(
@@ -217,10 +246,8 @@ object ResumeHtml {
           classAttr := "content",
           header(Some("hide-on-phone")),
           cvItems(resume.work.dropRight(dropCount), "working_experience_heading"),
+          makeFooter(gitRef, Some("hide-on-phone")),
         ),
-      ),
-      footer(
-        p(s"Version: $buildInfo | Generated: $timestamp", classAttr := "version-tag"),
       ),
     )
   }
