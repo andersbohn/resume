@@ -80,12 +80,12 @@ case object GistResImpl  extends Gist.Service {
 
   override def resume(lang: Lang, patchName: Option[String]): Task[Resume] =
     for {
-      strEn     <- zioResource("./resume.json")
+      strEn     <- zioResource("resume.json")
       patchLang <- lang match {
         case Lang.en => ZIO.none
-        case Lang.de => zioResource("./resume_de.json").map(Some(_))
+        case Lang.de => zioResource("resume_de.json").map(Some(_))
       }
-      patchOpt  <- patchName.map(n => zioResource(s"./$n")).map(_.map(Some(_))).getOrElse(ZIO.none)
+      patchOpt  <- patchName.map(n => zioResource(s"$n")).map(_.map(Some(_))).getOrElse(ZIO.none)
 
       resume <- ZIO.fromEither {
         (for {
@@ -110,7 +110,7 @@ case object GistResImpl  extends Gist.Service {
   override def messages(lang: Lang): Task[Messages] =
     for {
       data <- ZIO.attempt {
-        val source  = Source.fromResource(s"./messages_$lang.json")
+        val source  = Source.fromResource(s"messages_$lang.json")
         val strings = source.getLines().mkString("\n")
         strings
       }

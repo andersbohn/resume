@@ -1,0 +1,28 @@
+name: Production Deploy
+on:
+  push:
+    tags:
+      - 'v*' # Trigger on v-tag
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Scala
+        uses: coursier/setup-action@v1
+        with:
+          jvm: temurin:17
+
+      - name: Build Static Site
+        run: |
+          sbt "runMain StaticExporter"
+          cp -r src/main/resources/* target/dist/assets/
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=cv-zio-site --branch=main
