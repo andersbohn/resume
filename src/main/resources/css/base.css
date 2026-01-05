@@ -248,7 +248,10 @@
 		margin-bottom:0; 
 	}
 	
-	li{ }
+	li{
+	     padding-left: 1em;
+         text-indent: -1em;
+	}
 	
 	ul{ list-style-type:disc; }
 	ol{ list-style-type:decimal; }
