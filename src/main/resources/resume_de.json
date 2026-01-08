@@ -3,7 +3,7 @@
     "label": "Scala Entwickler",
     "image": "https://cv.andersbohn.dk/assets/images/profilfoto1.jpg",
     "summary": "Vielseitiger und starker Problemlöser auf allen Ebenen. Erfahren in der Klärung und Verhandlung von Anforderungen mit dem Product Management sowie in der zuverlässigen Umsetzung unter Einhaltung des „Magischen Dreiecks“ (Zeit, Kosten, Qualität). Ich setze mich für eine Teamkultur technischer Exzellenz ein – durch Mentoring, pragmatisches Systemdesign und klare Kommunikation in funktionsübergreifenden Teams.",
-    "website": "https://cv.andersbohn.dk/de",
+    "website": "https://cv.andersbohn.dk/de/swe",
     "birth": {
       "place": "Dänemark"
     }
@@ -58,12 +58,12 @@
   ],
   "references": [
     {
-      "reference": "Interim certificate / Zwischenzeugnis",
-      "name": "Ask me. Available from Leonteq Securities AG in German and from Teralytics AG in English"
+      "reference": "Zwischenzeugnisse",
+      "name": "Bitte nachfragen. Zur Verfügung von Leonteq Securities AG auf Deutsch, und vom Teralytics AG, Metaco AG and Ripple auf English"
     },
     {
-      "reference": "Anything else?",
-      "name": "Request some wishes in terms of Company I worked for and role, and I will go find one for you :-)"
+      "reference": "Sonnst?",
+      "name": "Kann eine Reihe vorstellen von meinem Resume."
     }
   ],
   "skills": [
@@ -199,7 +199,7 @@
     {
       "name": "Werdegang",
       "keywords": [
-        "(1991–2006) Entwicklung vom Mainframe-Bereich (Wasserfall-Modell) über Oracle Client-Server bis hin zu N-tier Java Enterprise. Früher Anwender von Java und seit 2010 Early Adopter von Scala. Mein Ausbildungshintergrund erfolgte berufsbegleitend. Weitere Details finden Sie auf meinem LinkedIn-Profil.",
+        "(1991–2006) Entwicklung vom Mainframe-Bereich (Wasserfall-Modell) über Oracle Client-Server bis hin zu N-tier Java Enterprise. Schon seit 2010 Early Adopter von Scala. Mein Ausbildungshintergrund erfolgte berufsbegleitend. Weitere Details finden Sie auf meinem LinkedIn-Profil.",
         "Rollen: System-Entwickler bei LEC, Architekt bei Maersk Data und IBM Dänemark.",
         "Ausbildung: Datanom (Informatik) am Aarhus Business College; Philosophie/Ideengeschichte an der Universität Aarhus.",
         "Militärdienst: Wehrpflicht Dänische Infanterie sowie zwei sechsmonatige UN-Friedenseinsätze (Kroatien/Bosnien).",

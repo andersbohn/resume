@@ -2,14 +2,34 @@
   "basics": {
     "label": "Senior Data Engineer",
     "image": "https://cv.andersbohn.dk/images/profilfoto1.jpg",
-    "summary": "TODO WIP Versatile and strong problem solver on all levels from technical details to architectural decisions or reflections on team practices and project methods.",
-    "website": "https://cv.andersbohn.dk/sde"
+    "summary": "Versatile and strong problem solver on all levels. Capable of clarifying requirements with product owners to deliver high-reliability systems within agreed constraints. Committed to fostering a team culture of technical excellence through mentorship, pragmatic system design, and clear communication across multi-functional teams.",
+    "website": "https://cv.andersbohn.dk/en/sde"
   },
-  "languages": [],
   "education": [],
   "references": [],
   "skills": [],
   "awards": [],
   "work": [],
-  "interests": []
+  "interests": [
+    {
+      "name": "Werdegang",
+      "keywords": [
+        "(1991–2006) Entwicklung vom Mainframe-Bereich (Wasserfall-Modell) über Oracle Client-Server bis hin zu N-tier Java Enterprise. Schon seit 2010 Early Adopter von Scala. Mein Ausbildungshintergrund erfolgte berufsbegleitend. Weitere Details finden Sie auf meinem LinkedIn-Profil.",
+        "Rollen: System-Entwickler bei LEC, Architekt bei Maersk Data und IBM Dänemark.",
+        "Ausbildung: Datanom (Informatik) am Aarhus Business College; Philosophie/Ideengeschichte an der Universität Aarhus.",
+        "Militärdienst: Wehrpflicht Dänische Infanterie sowie zwei sechsmonatige UN-Friedenseinsätze (Kroatien/Bosnien).",
+        "High school - Math, Physics and Chemistry"
+      ]
+    },
+    {
+      "name": "Freizeit",
+      "keywords": [
+        "Bergsport und Kampfsport.",
+        "Alpinewandern, Sport- und Felsklettern.",
+        "Zertifizierter Ski-Instruktor (Basic).",
+        "SAC-Uto Tourenleiter (Schweizer Alpen-Club).",
+        "Karate (Schwarzer Gurt) und Brazilian Jiu-Jitsu"
+      ]
+    }
+  ]
 }
