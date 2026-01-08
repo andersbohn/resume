@@ -12,12 +12,12 @@
 		.content{}
 
 			.logo{ line-height:29px; text-transform:uppercase; margin-bottom:0; color:#darkblue; }
-			.logo small{ font-weight:300; font-size:14px; color:#444; }
+			.logo small{ font-weight:300; font-size:17px; color:#444; }
 					
 			.address-info{ padding-right:20px; border-right:1px solid #efefef; text-align:right; margin-bottom:0; }
 			.contact-info{ list-style:none; margin-bottom:0; }
 		
-			.cv-profile{ margin:30px 0 30px 0; padding:40px 0; border-top:1px solid #efefef; border-bottom:1px solid #efefef; font-weight:300; font-size:15px; line-height:24px; text-align:center; }
+			.cv-profile{ margin:30px 0 30px 0; padding:40px 0; border-top:1px solid #efefef; border-bottom:1px solid #efefef; font-weight:300; font-size:16px; line-height:24px; text-align:center; }
 
 			.cv-section-title{ color:darkblue; margin:0 0 15px 0; line-height:18px; }
 			
@@ -27,8 +27,8 @@
 					.cv-item-description h6{ line-height:24px; margin-bottom:5px; text-transform:uppercase; background-color:#f5f5f5; padding:0 10px; -webkit-border-radius:5px; border-radius:5px; }
 					.highlight{ background-color:#f5f5f5; padding:0 10px; -webkit-border-radius:5px; border-radius:5px; }
 					
-				.cv-item-details h4{ line-height:22px; margin-bottom:6px; }
-	
+				.cv-item-details{ font-size:14px; } h4{ line-height:22px; margin-bottom:6px; }
+
 			.skill{ margin-bottom:40px; }
 				
 				.skill h4{ line-height:22px; margin-bottom:10px; }
