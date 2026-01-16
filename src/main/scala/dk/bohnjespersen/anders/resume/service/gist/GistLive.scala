@@ -8,10 +8,8 @@ import scala.io.Source
 
 import dk.andersbohn.resume.domain.Resume
 import dk.andersbohn.resume.service.gist.GistLive.GistUrl
-import io.netty.handler.ssl.SslContextBuilder
 import zio.*
 import zio.http.*
-import zio.http.netty.client.NettyClientDriver
 import zio.json.*
 import zio.json.ast.Json
 
@@ -61,14 +59,29 @@ case object GistLiveImpl extends Gist.Service {
   override def messages(lang: Lang): Task[Messages] = ???
 }
 case object GistResImpl  extends Gist.Service {
-  private def mergeOn(en: Resume, patchOpt: Option[Json]): Either[String, Resume] =
+  private def overwriteMerge(existing: Json, incoming: Json): Json =
+    (existing, incoming) match {
+      // If both are objects, merge their fields recursively
+      case (Json.Obj(oldFields), Json.Obj(newFields)) =>
+        val combinedFields = oldFields.toMap ++ newFields.toMap.map {
+          case (key, newValue) =>
+            val mergedValue = oldFields.toMap.get(key) match {
+              case Some(oldValue) => overwriteMerge(oldValue, newValue)
+              case None           => newValue
+            }
+            key -> mergedValue
+        }
+        Json.Obj(Chunk.fromIterable(combinedFields.toVector))
+
+      case _ => incoming
+    }
+
+  private def mergeOn(en: Json, patchOpt: Option[Json]): Either[String, Json] =
     patchOpt match {
       case Some(patch) =>
         for {
           enJson <- en.toJsonAST
-          merged = enJson.merge(patch)
-          res <- merged.as[Resume]
-        } yield res
+        } yield enJson.merge(patch)
       case None        => Right(en)
     }
 
@@ -80,28 +93,20 @@ case object GistResImpl  extends Gist.Service {
 
   override def resume(lang: Lang, patchName: Option[String]): Task[Resume] =
     for {
-      strEn     <- zioResource("resume.json")
-      patchLang <- lang match {
-        case Lang.en => ZIO.none
-        case Lang.de => zioResource("resume_de.json").map(Some(_))
-      }
-      patchOpt  <- patchName.map(n => zioResource(s"$n")).map(_.map(Some(_))).getOrElse(ZIO.none)
+      strResumeLang <- zioResource(s"base/resume_$lang.json")
+      strPatchOpt <- patchName.map(n => zioResource(s"$n")).map(_.map(Some(_))).getOrElse(ZIO.none)
 
       resume <- ZIO.fromEither {
         (for {
-          en <- strEn.fromJson[Resume]
-          ln <- patchLang match {
-            case Some(p) => p.fromJson[Json].map(Some(_))
-            case None    => Right(None)
-          }
-          po <- patchOpt match {
+          resumeLang     <- strResumeLang.fromJson[Json]
+          maybePatchJson <- strPatchOpt match {
             case Some(p) => p.fromJson[Json].map(Some(_))
             case None    => Right(None)
           }
 
-          res1 <- mergeOn(en, ln)
-          res  <- mergeOn(res1, po)
-        } yield res).left.map { e =>
+          res    <- mergeOn(resumeLang, maybePatchJson)
+          resume <- res.as[Resume]
+        } yield resume).left.map { e =>
           new RuntimeException(s"error -> $e")
         }
       }
@@ -110,7 +115,7 @@ case object GistResImpl  extends Gist.Service {
   override def messages(lang: Lang): Task[Messages] =
     for {
       data <- ZIO.attempt {
-        val source  = Source.fromResource(s"messages_$lang.json")
+        val source  = Source.fromResource(s"messages/messages_$lang.json")
         val strings = source.getLines().mkString("\n")
         strings
       }

@@ -1,12 +1,38 @@
 {
   "basics": {
+    "name": "Anders Bohn Jespersen",
     "label": "Scala Entwickler",
-    "image": "https://cv.andersbohn.dk/assets/images/profilfoto1.jpg",
-    "summary": "Vielseitiger und starker Problemlöser auf allen Ebenen. Erfahren in der Klärung und Verhandlung von Anforderungen mit dem Product Management sowie in der zuverlässigen Umsetzung unter Einhaltung des „Magischen Dreiecks“ (Zeit, Kosten, Qualität). Ich setze mich für eine Teamkultur technischer Exzellenz ein – durch Mentoring, pragmatisches Systemdesign und klare Kommunikation in funktionsübergreifenden Teams.",
+    "summary": "Vielseitiger und starker Problemlöser auf allen Ebenen. Erfahren in der Klärung und Verhandlung von Anforderungen mit dem Product Management sowie in der zuverlässigen Umsetzung unter Einhaltung der Zeit, Kosten und Qualität. Ich setze mich für eine Teamkultur technischer Exzellenz ein – durch Mentoring, pragmatisches Systemdesign und klare Kommunikation in funktionsübergreifenden Teams.",
     "website": "https://cv.andersbohn.dk/de/swe",
     "birth": {
-      "place": "Dänemark"
-    }
+      "place": "Dänemark",
+      "state": "Grenaa",
+      "date": "1972"
+    },
+    "location": {
+      "city": "Zürich",
+      "countryCode": "CH"
+    },
+    "name": "Anders Bohn Jespersen",
+    "image": "https://cv.andersbohn.dk/assets/images/profilfoto1.jpg",
+    "email": "anders@bohnjespersen.dk",
+    "profiles": [
+      {
+        "url": "https://linkedin.com/in/andersbohn",
+        "username": "andersbohn",
+        "network": "linkedin"
+      },
+      {
+        "url": "https://github.com/andersbohn",
+        "username": "andersbohn",
+        "network": "github"
+      },
+      {
+        "url": "https://cv.andersbohn.dk/en",
+        "username": "andersbohn",
+        "network": "webcv"
+      }
+    ]
   },
   "languages": [
     {
@@ -120,7 +146,7 @@
       "endDate": "2026-01-01",
       "highlights": [
         "Tech Stack: Scala, ZIO, Doobie, Tapir, Temporal, Keycloak.",
-        "Infrastruktur: Kubernetes, Docker, OTEL (Observability).",
+        "Infrastruktur: Kubernetes, Helm, Docker, Docker Compose.",
         "Innovation: Implementierung von KI-gestützten Code-Reviews (Copilot, Augment AI)."
       ]
     },

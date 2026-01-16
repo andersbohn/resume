@@ -61,7 +61,7 @@ object MainApp extends ZIOAppDefault {
   ): Option[String] =
     reqPatch.orElse(
       if (aspect == Aspect.sde)
-        Some(if (lang == Lang.en) s"resume_sde.json" else s"resume_sde_$lang.json")
+        Some(s"patch/resume_sde_$lang.json")
       else None,
     )
 

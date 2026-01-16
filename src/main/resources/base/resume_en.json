@@ -1,23 +1,20 @@
 {
-  "meta": {
-    "theme": "autumn"
-  },
   "basics": {
-    "name": "Anders Bohn Jespersen",
     "label": "Scala Developer",
-    "image": "https://cv.andersbohn.dk/assets/images/profilfoto1.jpg",
     "summary": "Versatile and strong problem solver on all levels. Capable of clarifying requirements with product owners to deliver high-reliability systems within agreed constraints. Committed to fostering a team culture of technical excellence through mentorship, pragmatic system design, and clear communication across multi-functional teams.",
     "website": "https://cv.andersbohn.dk/en/swe",
-    "email": "anders@bohnjespersen.dk",
-    "location": {
-      "city": "Zürich",
-      "countryCode": "CH"
-    },
     "birth": {
       "place": "Denmark",
       "state": "Grenaa",
       "date": "1972"
     },
+    "location": {
+      "city": "Zürich",
+      "countryCode": "CH"
+    },
+    "name": "Anders Bohn Jespersen",
+    "image": "https://cv.andersbohn.dk/assets/images/profilfoto1.jpg",
+    "email": "anders@bohnjespersen.dk",
     "profiles": [
       {
         "url": "https://linkedin.com/in/andersbohn",
@@ -149,7 +146,7 @@
       "highlights": [
         "ZIO and property based integration tests",
         "Blockchains, Cryptography",
-        "Kubernetes, Docker",
+        "Kubernetes, Helm, Docker, Docker Compose",
         "OTEL, Observability, Grafana, Temporal, Keycloak",
         "Copilot and Augment AI investigation for advanced code reviews and implementation support."
       ]

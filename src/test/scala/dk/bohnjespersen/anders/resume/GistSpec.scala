@@ -12,21 +12,21 @@ import scala.io.Source
 
 object GistSpec extends ZIOSpecDefault {
   def spec = suite("suite for Gist resource")(
-    test("test resume.json english") {
-      val source  = Source.fromResource("./resume.json")
+    test("test resume_en.json english") {
+      val source  = Source.fromResource("base/resume_en.json")
       val request = Request.get(URL(Path.decode("/")))
       ZIO.serviceWithZIO[Gist.Service](gistJson => gistJson.resume(Lang.safeOrEnglish("dk"), None),
       ) *> assertTrue(true)
     },
-    test("test resume.json german") {
-      val source  = Source.fromResource("./resume.json")
+    test("test resume_en.json german") {
+      val source  = Source.fromResource("base/resume_en.json")
       val request = Request.get(URL(Path.decode("/")))
       ZIO
         .serviceWithZIO[Gist.Service](gistJson => gistJson.resume(Lang.de, None))
         .map(j => assert(j.basics.label)(equalTo("Scala Entwickler")))
     },
-    test("test resume.json") {
-      val source  = Source.fromResource("messages_en.json")
+    test("test resume_en.json") {
+      val source  = Source.fromResource("messages/messages_en.json")
       val request = Request.get(URL(Path.decode("/")))
       ZIO
         .serviceWithZIO[Gist.Service](gistJson => gistJson.messages(Lang.en))
@@ -36,7 +36,7 @@ object GistSpec extends ZIOSpecDefault {
         }
     },
     test("test messages_de.json english") {
-      val source  = Source.fromResource("./resume.json")
+      val source  = Source.fromResource("base/resume_en.json")
       val request = Request.get(URL(Path.decode("/")))
       ZIO.serviceWithZIO[Gist.Service](gistJson => gistJson.resume(Lang.safeOrEnglish("dk"), None),
       ) *> assertTrue(true)
